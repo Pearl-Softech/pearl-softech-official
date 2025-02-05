@@ -15,9 +15,9 @@ const Services = () => {
             src={software} // Replace with actual path
             alt="Software Development"
           />
-          
+
           <div className="service-info">
-            <h3>Software Development</h3>
+            <h3><span>Software</span> Development</h3>
             <p>
               We create custom software solutions tailored to meet your unique
               business needs. From web and mobile applications to enterprise
@@ -30,8 +30,14 @@ const Services = () => {
         </div>
 
         <div className="service">
+          <img
+            className="service-image"
+            src={cloud} // Replace with actual path
+            alt="Cloud Services"
+          />
+
           <div className="service-info">
-            <h3>Cloud Services</h3>
+            <h3><span>Cloud</span> Services</h3>
             <p>
               Embrace the power of the cloud with our comprehensive cloud
               services. Whether you're looking to migrate your business to the
@@ -42,23 +48,17 @@ const Services = () => {
               cloud infrastructure tailored to your specific needs.
             </p>
           </div>
-
-          <img
-            className="service-image"
-            src={cloud} // Replace with actual path
-            alt="Software Development"
-          />
         </div>
 
         <div className="service">
           <img
             className="service-image"
             src={cyber} // Replace with actual path
-            alt="Cybersecurity"
+            alt="Cyber Security"
           />
 
           <div className="service-info">
-            <h3>Cyber Security</h3>
+            <h3><span>Cyber</span> Security</h3>
             <p>
               Protect your digital assets with our robust cybersecurity services.
               We offer a range of services including threat detection, risk
@@ -72,8 +72,13 @@ const Services = () => {
         </div>
 
         <div className="service">
+          <img className="service-image"
+            src={penetration} // Replace with actual path
+            alt="Penetration Testing"
+          />
+
           <div className="service-info">
-            <h3>Penetration Testing</h3>
+            <h3><span>Penetration</span> Testing</h3>
             <p>
               Identify vulnerabilities before they become threats with our
               thorough penetration testing services. Our skilled ethical hackers
@@ -83,11 +88,6 @@ const Services = () => {
               security posture, helping you proactively mitigate risks.
             </p>
           </div>
-
-          <img className="service-image"
-            src={penetration} // Replace with actual path
-            alt="Software Development"
-          />
         </div>
       </div>
     </div>
