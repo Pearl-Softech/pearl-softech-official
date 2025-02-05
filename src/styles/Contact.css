@@ -46,6 +46,7 @@ form input::placeholder,
 form textarea::placeholder {
     font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: 200;
 }
 
 form textarea {
