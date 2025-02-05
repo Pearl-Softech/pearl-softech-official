@@ -1,4 +1,4 @@
-# DeraSewa Official
+# Pearl Softech Official
 
 This repository contains the official webpage code of the Pearl Softech, developed using Vite + React.
 
