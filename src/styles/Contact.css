@@ -1,0 +1,92 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-container .title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.contact-container .title span {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    width: 40%;
+    display: flex;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.1px solid var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    color: white;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    width: 40%;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0.1px solid black;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 770px) {
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-container .title {
+        font-size: 18px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+}

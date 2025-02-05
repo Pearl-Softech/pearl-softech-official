@@ -1,0 +1,83 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .hero .hero-content .first-row {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home-container .hero .hero-content .second-row {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.home-container .hero .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.home-container .hero .buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: "Poppins", serif;
+}
+
+.home-container .hero .buttons button a {
+    text-decoration: none;
+}
+
+.home-container .hero .buttons button .join {
+    color: black;
+}
+
+.home-container .hero .buttons button .about{
+    color: white;
+}
+
+.home-container .hero .buttons button:first-child {
+    background-color: var(--primary-color);
+    border: 0.1px solid var(--primary-color);
+}
+
+.home-container .hero .buttons button:last-child {
+    background-color: transparent;
+    border: 0.1px solid var(--primary-color);
+}
+
+.home-container .hero .buttons button:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 0px var(--primary-color);
+}
+
+@media screen and (max-width: 900px) {
+    .home-container{
+        justify-content: flex-start;
+    }
+    .home-container .hero .hero-content .first-row {
+        font-size: 20px;
+    }
+
+    .home-container .hero .hero-content .second-row {
+        font-size: 14px;
+    }
+    
+}

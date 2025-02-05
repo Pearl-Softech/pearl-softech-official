@@ -1,0 +1,95 @@
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav-container .first-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-container .first-row .logo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-container .first-row .logo span{
+    color: var(--primary-color);
+}
+
+.nav-container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-container .menu {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-container .first-row .links a {
+    font-weight: 200;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-container .first-row .links a:hover{
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+}
+
+.nav-container .second-row {
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--primary-color);
+    margin-top: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.nav-container .second-row a {
+    border-bottom: 0.1px solid black;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-container .first-row .links {
+        display: none;
+    }
+
+    .nav-container .menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-container .second-row {
+        display: none;
+    }
+
+}
