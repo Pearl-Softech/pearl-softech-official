@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
         <div className="links">
           <Link to={"/about"}>About</Link>
           <Link to={"/services"}>Services</Link>
-            <Link to={"/contact"}>Contact</Link>
+          <Link to={"/contact"} className="contact">Contact</Link>
         </div>
       </div>
       {secondRow &&

@@ -8,6 +8,20 @@ const About = () => {
         Welcome to <strong>Pearl Softech Pvt. Ltd.</strong>, your trusted partner in software development, cloud services, penetration testing, and cybersecurity. Our mission is to empower businesses and individuals by providing secure, scalable, and innovative solutions that help businesses thrive in the digital age.
         <br />
         <br />
+        <strong>Pearl Softech Pvt. Ltd.:</strong> “Empowering Innovation, Elevating Digital Success”
+        <br />
+        Pearl Softech Pvt. Ltd. operates at the intersection of technology and business growth, providing innovative solutions to enhance digital presence and operational efficiency.
+        <br />
+        <br />
+        <strong>Digital Marketing:</strong> Leverages data-driven strategies, including SEO, performance marketing, content creation, and analytics, to enhance brand positioning, customer engagement, and conversion rates.
+        <br />
+        <br />
+        <strong>Software Development:</strong> Encompasses the design, development, and deployment of cutting-edge applications, enterprise systems, and digital platforms tailored to optimize business processes and user experiences.
+        <br />
+        <br />
+        By integrating advanced technological solutions with strategic marketing methodologies, these companies drive digital transformation and sustainable business success.
+        <br />
+        <br />
         <strong>Our Journey:</strong>
         <br />
         Founded in 2025, Pearl Softech started with a vision to revolutionize the technology landscape. Over the years, we have grown into a leading provider of comprehensive tech solutions, serving clients across various industries. Our commitment to innovation and excellence has been the driving force behind our success.
@@ -22,6 +36,9 @@ const About = () => {
         <br />
         <br />
         Security is at the core of everything we do. With our expert penetration testing services, we help businesses identify vulnerabilities and safeguard their digital assets from cyber threats. Our team of ethical hackers and cybersecurity professionals ensures that your systems are resilient against attacks.
+        <br />
+        <br />
+        <strong>Digital Marketing:</strong> Leverages data-driven strategies, including SEO, performance marketing, content creation, and analytics, to enhance brand positioning, customer engagement, and conversion rates.
         <br />
         <br />
         <strong>Our Values:</strong>
@@ -49,6 +66,28 @@ const About = () => {
         <br />
         <br />
         Join us on our journey to redefine the digital landscape with cutting-edge technology solutions. Contact us today and let’s build something great together!
+        <br />
+        <br />
+        <strong>Digital Marketing Services:</strong>
+        <br />
+        <strong>A. Content Creation and Views Optimization:</strong> 
+        <ul>
+          <li>Influence Campaigning</li>
+          <li>Digital Profile Management</li>
+        </ul>
+        <br />
+        <strong>B. Platforms We Serve:</strong>
+        <ul>
+          <li>Google (SEO)</li>
+          <li>Webpages</li>
+          <li>Facebook/Messenger/Page</li>
+          <li>YouTube</li>
+          <li>Instagram</li>
+          <li>Twitter (X)</li>
+          <li>TikTok</li>
+          <li>LinkedIn</li>
+          <li>WhatsApp</li>
+        </ul>
       </div>
     </div>
   );

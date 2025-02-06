@@ -1,14 +1,36 @@
 import "../styles/Services.css";
+import digital from "../assets/digital-marketing.jpg";
 import software from "../assets/software-development.jpg";
 import cloud from "../assets/cloud-services.jpg";
 import cyber from "../assets/cyber-security.jpg";
-import penetration from "../assets/penetration-testing.jpg";
 
 const Services = () => {
   return (
     <div className="services-container">
       <div className="title"><span>OUR</span> SERVICES</div>
       <div className="services-content">
+        <div className="service">
+          <img
+            className="service-image"
+            src={digital} // Replace with actual path
+            alt="Digital Marketing"
+          />
+
+          <div className="service-info">
+            <h3><span>Digital</span> Marketing</h3>
+            <p>
+              Enhance your online presence and drive growth with our digital
+              marketing services. Our team of experts leverages data-driven
+              strategies to optimize your marketing campaigns, increase brand
+              visibility, and engage your target audience. From SEO and social
+              media marketing to content creation and analytics, we offer a
+              comprehensive suite of services to help you achieve your marketing
+              goals. Let us help you elevate your digital marketing efforts and
+              reach new heights of success.
+            </p>
+          </div>
+        </div>
+
         <div className="service">
           <img
             className="service-image"
@@ -67,25 +89,6 @@ const Services = () => {
               technologies to provide comprehensive protection. We also offer
               security awareness training to help your team recognize and respond
               to potential threats effectively.
-            </p>
-          </div>
-        </div>
-
-        <div className="service">
-          <img className="service-image"
-            src={penetration} // Replace with actual path
-            alt="Penetration Testing"
-          />
-
-          <div className="service-info">
-            <h3><span>Penetration</span> Testing</h3>
-            <p>
-              Identify vulnerabilities before they become threats with our
-              thorough penetration testing services. Our skilled ethical hackers
-              simulate real-world cyber-attacks to uncover weaknesses in your
-              systems and networks. We provide detailed reports with actionable
-              insights and remediation suggestions to improve your overall
-              security posture, helping you proactively mitigate risks.
             </p>
           </div>
         </div>

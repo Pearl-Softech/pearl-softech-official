@@ -12,9 +12,10 @@ const Footer: React.FC = () => {
         <Link to={"/faq"}>FAQs</Link>
       </div>
       <div className="socials">
-        <a href="https://facebook.com/pearlsoftech"><i className="fa-brands fa-facebook"></i></a>
-        <a href="https://github.com/Pearl-Softech"><i className="fa-brands fa-github"></i></a>
+        <a href=""><i className="fa-brands fa-x-twitter"></i></a>
         <a href="https://linkedin.com/pearlsoftech"><i className="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Pearl-Softech"><i className="fa-brands fa-github"></i></a>
+        <a href="https://facebook.com/pearlsoftech"><i className="fa-brands fa-facebook"></i></a>
       </div>
     </div>
   )

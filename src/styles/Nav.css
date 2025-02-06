@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .nav-container .menu {
@@ -56,11 +56,24 @@
     color: var(--primary-color);
 }
 
+.nav-container .first-row .links  .contact {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-container .first-row .links  .contact:hover{
+    transition: all 0.3s ease;
+    background-color: white;
+    color: black;
+}
+
 .nav-container .second-row {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: var(--primary-color);
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0), var(--primary-color));
     margin-top: 5px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -72,7 +85,7 @@
     border-bottom: 0.1px solid black;
     font-size: 15px;
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }

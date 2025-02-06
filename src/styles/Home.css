@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 55%;
 }
 
 .home-container .hero .hero-content {
@@ -10,17 +11,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.home-container .hero .hero-content .first-row {
-    font-size: 30px;
+.home-container .hero .hero-content .first-row span {
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .home-container .hero .hero-content .second-row {
     font-size: 15px;
     font-weight: 200;
+    opacity: 0;
 }
 
 .home-container .hero .buttons {
@@ -71,8 +76,9 @@
 @media screen and (max-width: 900px) {
     .home-container{
         justify-content: flex-start;
+        width: 100%;
     }
-    .home-container .hero .hero-content .first-row {
+    .home-container .hero .hero-content .first-row span {
         font-size: 20px;
     }
 

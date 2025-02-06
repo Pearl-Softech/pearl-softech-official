@@ -8,7 +8,7 @@
 }
 
 .services-container .title {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bolder;
 }
 
@@ -20,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
 }
 
 .services-container .services-content p {
@@ -46,7 +46,7 @@
 
 .services-container .services-content .service img {
     width: 500px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
