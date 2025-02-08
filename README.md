@@ -30,5 +30,5 @@ This repository contains the official webpage code of the Pearl Softech, develop
     ```
 
 <p align="center">
-  &copy; 2024 - Present <a href="https://derasewa.com" target="_blank">DeraSewa</a>
+  &copy; 2024 - Present <a href="https://pearlsoftech" target="_blank">Pearl Softech</a>
 </p>
