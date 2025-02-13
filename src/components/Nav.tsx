@@ -19,6 +19,8 @@ const Nav: React.FC = () => {
         <div className="links">
           <Link to={"/about"}>About</Link>
           <Link to={"/services"}>Services</Link>
+          <Link to={"/career"}>Career</Link>
+          <Link to={"/events"}>Events</Link>
           <Link to={"/contact"} className="contact">Contact</Link>
         </div>
       </div>

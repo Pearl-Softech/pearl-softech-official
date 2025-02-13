@@ -57,7 +57,7 @@ const About = () => {
         <br />
         <strong>Our Team:</strong>
         <br />
-        Our team of experts is the backbone of [Your Company Name]. With diverse backgrounds and extensive experience, our professionals bring a wealth of knowledge and skills to every project. We foster a collaborative and inclusive culture that encourages continuous learning and growth. Our team is dedicated to staying up-to-date with the latest industry trends and technologies to deliver the best possible solutions to our clients.
+        Our team of experts is the backbone of Pearl Softech. With diverse backgrounds and extensive experience, our professionals bring a wealth of knowledge and skills to every project. We foster a collaborative and inclusive culture that encourages continuous learning and growth. Our team is dedicated to staying up-to-date with the latest industry trends and technologies to deliver the best possible solutions to our clients.
         <br />
         <br />
         <strong>Community Engagement:</strong>

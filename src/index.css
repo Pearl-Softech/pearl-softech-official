@@ -11,13 +11,9 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: black;
   color: white;
   font-family: "Poppins", serif;
-  background: url("./assets/background.svg");
+  background: url("./assets/images/background.svg");
 }
