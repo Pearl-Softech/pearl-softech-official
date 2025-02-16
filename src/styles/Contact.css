@@ -107,6 +107,10 @@ form button:hover {
     font-size: 20px;
 }
 
+.company-info .socials a{
+    color: black;
+}
+
 .contact-container iframe {
     border-radius: 5px;
     margin-top: 20px;

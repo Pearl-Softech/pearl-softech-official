@@ -147,13 +147,13 @@ const Contact: React.FC = () => {
                     <div className="header">HEAD OFFICE</div>
                     <div className="body">
                         <div>Pearl Softech Pvt. Ltd.</div>
-                        <div>Kathmandu, Maitidevi</div>
-                        <div><i className="fa-solid fa-phone"></i> 9766528549</div>
+                        <div>Kathmandu, Buddhanagar</div>
+                        <div><i className="fa-solid fa-phone"></i> 9704337901, 9857822532</div>
                         <div><i className="fa-solid fa-envelope"></i> pearlsoftechorg@gmail.com</div>
                         <div className="socials">
-                            <i className="fa-brands fa-facebook"></i>
-                            <i className="fa-brands fa-github"></i>
-                            <i className="fa-brands fa-linkedin"></i>
+                            <a href="https://www.facebook.com/profile.php?id=61569672626784&mibextid=ZbWKwL"><i className="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/pearl-softech"><i className="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/pearl-softech"><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
