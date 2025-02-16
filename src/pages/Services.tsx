@@ -19,7 +19,6 @@ const Services = () => {
           />
           <div className="service-info">
             <h3><span>Digital</span> Marketing</h3>
-            <button className="learn-more-btn">Learn More</button>
           </div>
         </div>
 
@@ -31,7 +30,6 @@ const Services = () => {
           />
           <div className="service-info">
             <h3><span>Software</span> Development</h3>
-            <button className="learn-more-btn">Learn More</button>
           </div>
         </div>
 
@@ -43,7 +41,6 @@ const Services = () => {
           />
           <div className="service-info">
             <h3><span>Cloud</span> Services</h3>
-            <button className="learn-more-btn">Learn More</button>
           </div>
         </div>
 
@@ -55,7 +52,6 @@ const Services = () => {
           />
           <div className="service-info">
             <h3><span>Cyber</span> Security</h3>
-            <button className="learn-more-btn">Learn More</button>
           </div>
         </div>
       </div>

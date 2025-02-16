@@ -72,12 +72,12 @@ form button {
     color: black;
     font-size: 16px;
     font-weight: 600;
+    font-family: "Poppins", sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
 form button:hover {
     background-color: white;
-    color: var(--primary-color);
 }
 
 .contact-container .company-info {
@@ -110,6 +110,23 @@ form button:hover {
 .contact-container iframe {
     border-radius: 5px;
     margin-top: 20px;
+}
+
+.contact-container .error{
+    width: fit-content;
+    background-color: rgb(255, 0, 0);
+    align-self: flex-start;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.contact-container .success{
+    width: fit-content;
+    color: black;
+    background-color: var(--primary-color);
+    align-self: flex-start;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 770px) {

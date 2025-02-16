@@ -1,49 +1,116 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
 
 const Contact: React.FC = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
+    const [companyName, setCompanyName] = useState("");
+    const [companyEmail, setCompanyEmail] = useState("");
+    const [companyPhoneNumber, setCompanyPhoneNumber] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Form submitted:", { name, email, phone, subject, message });
+        sendMail();
+    };
+
+    const sendMail = async () => {
+        setIsSubmitting(true);
+
+        let payload = {
+            companyName,
+            companyEmail,
+            companyPhoneNumber,
+            subject,
+            message
+        };
+        let options = {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': '10164e0ea0c44fbb1195dbf552f35100'
+            },
+            body: JSON.stringify(payload)
+        };
+        try {
+            const res = await fetch("http://192.168.1.64:8080/business-mail", options);
+            const data = await res.json();
+            console.log(data);
+            if (data.type === "error") {
+                setError(data.message);
+                setSuccess(""); // Clear success message if there is an error
+            } else {
+                setError(""); // Clear error if request was successful
+                setSuccess(data.message); // Set success message
+                // Clear the form
+                setCompanyName("");
+                setCompanyEmail("");
+                setCompanyPhoneNumber("");
+                setSubject("");
+                setMessage("");
+                console.log("Mail sent successfully:", data);
+            }
+        } catch (error) {
+            setError("Failed to fetch");
+            setSuccess(""); // Clear success message if there is an error
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    const handleInputChange = () => {
+        if (error) {
+            setError(""); // Clear error when any input changes
+        }
+        if (success) {
+            setSuccess(""); // Clear success message when any input changes
+        }
     };
 
     return (
         <div className="contact-container">
             <div className="title"><span>CONTACT</span> US</div>
+            {error && <div className="error"><i className="fa-solid fa-circle-xmark"></i> {error}</div>}
+            {success && <div className="success"><i className="fa-solid fa-circle-check"></i> {success}</div>}
             <div className="content">
                 {/* Form Section */}
                 <form onSubmit={handleSubmit} className="contact-form">
                     <div className="form-group">
                         <input
                             type="text"
-                            id="name"
-                            value={name}
+                            id="companyName"
+                            value={companyName}
                             placeholder="Company Name"
-                            onChange={(e) => setName(e.target.value)}
+                            onChange={(e) => {
+                                setCompanyName(e.target.value);
+                                handleInputChange();
+                            }}
                             required
                         />
                         <input
                             type="email"
-                            id="email"
-                            value={email}
+                            id="companyEmail"
+                            value={companyEmail}
                             placeholder="Business Email"
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) => {
+                                setCompanyEmail(e.target.value);
+                                handleInputChange();
+                            }}
                             required
                         />
                     </div>
                     <div className="form-group">
                         <input
                             type="tel"
-                            id="phone"
-                            value={phone}
+                            id="companyPhoneNumber"
+                            value={companyPhoneNumber}
                             placeholder="Phone Number"
-                            onChange={(e) => setPhone(e.target.value)}
+                            onChange={(e) => {
+                                setCompanyPhoneNumber(e.target.value);
+                                handleInputChange();
+                            }}
                             required
                         />
                         <input
@@ -51,7 +118,10 @@ const Contact: React.FC = () => {
                             id="subject"
                             value={subject}
                             placeholder="Subject"
-                            onChange={(e) => setSubject(e.target.value)}
+                            onChange={(e) => {
+                                setSubject(e.target.value);
+                                handleInputChange();
+                            }}
                             required
                         />
                     </div>
@@ -60,11 +130,16 @@ const Contact: React.FC = () => {
                             id="message"
                             value={message}
                             placeholder="Message"
-                            onChange={(e) => setMessage(e.target.value)}
+                            onChange={(e) => {
+                                setMessage(e.target.value);
+                                handleInputChange();
+                            }}
                             required
                         ></textarea>
                     </div>
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? "Sending Mail..." : "SUBMIT"}
+                    </button>
                 </form>
 
                 {/* Company Information Section */}
