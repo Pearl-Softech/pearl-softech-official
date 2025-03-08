@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 20px;
 }
 
 .about-container .first-row .first-col{
@@ -36,6 +36,7 @@
     box-shadow: 15px 15px 0px black;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    height: 300px;
 }
 
 .about-container .first-row .second-col img{
@@ -265,6 +266,10 @@
 
     .about-container .third-row .first-col, .about-container .third-row .second-col{
         width: 100%;
+    }
+
+    .about-container .first-row .second-col{
+        box-shadow: 8px 8px 0px black;
     }
 
     .about-container .third-row .second-col .grid .item{

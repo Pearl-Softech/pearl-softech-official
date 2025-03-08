@@ -95,6 +95,9 @@ input, textarea{
     .form-component-container .first-col, .form-component-container .second-col{
         width: 100%;
     }
+    .form-component-container .first-col .header, .form-component-container .second-col .header{
+        font-size: 25px;
+    }
     .form-component-container .second-col{
         background-color: #F1F3F6;
         padding: 20px;

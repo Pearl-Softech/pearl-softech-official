@@ -78,7 +78,7 @@
         flex-direction: column-reverse;
         padding: 20px;
     }
-    .team-component-container .header{
+    .team-component-container .right .header{
         font-size: 25px;
     }
     .team-component-container .left{

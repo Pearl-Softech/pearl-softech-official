@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 <div className="second-col">
-                <div className="header">Fill out the form below</div>
+                <div className="header">Fill the form</div>
                     <form>
                         <div className="top-input">
                             <input type="text" placeholder='Company Name' />

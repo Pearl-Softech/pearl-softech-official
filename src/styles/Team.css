@@ -25,6 +25,7 @@
     box-shadow: 15px 15px 0px black;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    height: 300px;
 }
 
 .team-container .first-row .second-col img{
@@ -133,12 +134,23 @@
     color: black;
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1100px){
     .team-container .first-row{
         padding: 20px;
+        flex-direction: column-reverse;
     }
 
-    .team-container .first-row .header{
+    .team-container .first-row .first-col, .team-container .first-row .second-col{
+        width: 100%;
+    }
+
+    .team-container .first-row .second-col{
+        box-shadow: 8px 8px 0px black;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .team-container .first-row .first-col .header{
         font-size: 25px;
     }
     .team-container .third-row .header{
