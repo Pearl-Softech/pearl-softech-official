@@ -1,0 +1,310 @@
+.about-container{
+    margin-top: 72.4px;
+}
+
+.about-container .quote{
+    font-style: italic;
+    font-weight: 300;
+    color: #424242;
+}
+
+.about-container .first-row{
+    background-color: #F1F3F6;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-container .first-row .first-col{
+    width: 40%;
+}
+
+.about-container .first-row .first-col .header{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.about-container .first-row .first-col .quote{
+    margin-top: 20px;
+}
+
+.about-container .first-row .second-col{
+    width: 40%;
+    box-shadow: 15px 15px 0px black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.about-container .first-row .second-col img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.about-container .second-row{
+    padding: 100px;
+}
+
+.about-container .second-row .header{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about-container .second-row .para-top{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about-container .second-row .para-bottom{
+    margin-top: 20px;
+}
+
+.about-container .second-row .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container .second-row .col{
+    background-color: #f1f3f6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.about-container .second-row .col span{
+    margin-right: 15px;
+}
+
+.about-container .second-row .col .title{
+    font-weight: bolder;
+}
+
+.about-container .second-row .col .desc{
+    margin-top: 20px;
+}
+
+.about-container .third-row{
+    padding: 100px;
+    background-color: #F1F3F6;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.about-container .third-row .header{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about-container .third-row .first-col .row{
+    margin-top: 20px;
+}
+
+.about-container .third-row .first-col .row .title{
+    font-weight: bolder;
+}
+
+.about-container .third-row .first-col .row i{
+    color: rgb(5, 215, 43);
+    margin-right: 10px;
+}
+
+.about-container .third-row .first-col .row .first{
+    margin-bottom: 10px;
+}
+
+.about-container .third-row .second-col .grid{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-container .third-row .second-col .grid .item{
+    border: 2px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about-container .third-row .second-col .grid .item i{
+    font-size: 30px;
+}
+
+.about-container .third-row .second-col .grid .item .name{
+    font-weight: 600;
+}
+
+.about-container .third-row .second-col .grid .item:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.about-container .fourth-row{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .fourth-row .header{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about-container .fourth-row .grid{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .fourth-row .grid .item{
+    background-color: #F1F3F6;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    gap: 5px;
+    border-radius: 8px;
+}
+
+.about-container .fourth-row .grid .item i{
+    font-size: 30px;
+}
+
+.about-container .fourth-row .grid .item .title{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.about-container .fifth-row{
+    padding: 100px;
+    background-color: #F1F3F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container .fifth-row .header{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about-container .fifth-row a{
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.about-container .fifth-row a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 950px){
+    .about-container .first-row{
+        flex-direction: column-reverse;
+    }
+
+    .about-container .first-row .second-col{
+        width: 100%;
+    }
+
+    .about-container .first-row .first-col{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .about-container .first-row{
+        padding: 20px;
+    }
+
+    .about-container .first-row .first-col .header{
+        font-size: 25px;
+    }
+    
+    .about-container .second-row{
+        padding: 20px;
+    }
+
+    .about-container .second-row .header{
+        font-size: 25px;
+    }
+
+    .about-container .second-row .row{
+        flex-direction: column;
+    }
+
+    .about-container .second-row .col{
+        width: 100%;
+    }
+
+    .about-container .third-row{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-container .third-row .header{
+        font-size: 25px;
+    }
+
+    .about-container .third-row .second-col .grid .item{
+        width: 100%;
+    }
+
+    .about-container .fourth-row{
+        padding: 20px;
+    }
+
+    .about-container .fourth-row .header{
+        font-size: 20px;
+        align-self: flex-start;
+    }
+
+    .about-container .fourth-row .grid .item{
+        width: 100%;
+    }
+
+    .about-container .fifth-row{
+        padding: 20px;
+    }
+
+    .about-container .fifth-row .header{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
+

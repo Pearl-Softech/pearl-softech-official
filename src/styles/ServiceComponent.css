@@ -1,0 +1,63 @@
+.service-component-container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f3f6;
+}
+
+.service-component-container .header{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.service-component-container .service-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.service-component-container .service-wrapper .service{
+    border: 2px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 300px;
+}
+
+.service-component-container .service:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.service-component-container .service-wrapper .service i{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.service-component-container .service-wrapper .service .title{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 760px){
+    .service-component-container{
+        padding: 20px;
+    }
+    .service-component-container .header{
+        font-size: 25px;
+        align-self: flex-start;
+    }
+}
+
+

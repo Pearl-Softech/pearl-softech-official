@@ -1,0 +1,100 @@
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-left: 30px;
+    gap: 20px;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container .first-col{
+    width: 40%;
+}
+
+.hero-container .first-col .hero-header{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.hero-container .first-col .hero-para{
+    color: black;
+}
+
+.hero-container .first-col .buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hero-container .first-col .buttons a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-container .first-col .buttons a:first-child{
+    background-color: black;
+    color: white;
+}
+
+.hero-container .first-col .buttons a:first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+.hero-container .first-col .buttons a:nth-child(2){
+    color: black;
+}
+
+.hero-container .first-col .buttons a:nth-child(2):hover{
+    background-color: black;
+    color: white;
+}
+
+.hero-container .second-col{
+    width: 40%;
+}
+
+.hero-container .second-col img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+@media screen and (max-width: 1000px){
+    .hero-container .first-col .hero-header{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .hero-container .first-col .hero-header{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .hero-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+        margin-top: 72.4px;
+        margin-bottom: 50px;
+    }
+    .hero-container .first-col{
+        width: 100%;
+    }
+    .hero-container .second-col{
+        width: 100%;
+    }
+    .hero-container .first-col .hero-header{
+        font-size: 35px;
+    }
+}
