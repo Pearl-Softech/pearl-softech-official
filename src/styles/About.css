@@ -67,7 +67,7 @@
 .about-container .second-row .row{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }

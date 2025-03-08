@@ -4,21 +4,35 @@
 
 .team-container .first-row{
     padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #F1F3F6;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
-.team-container .first-row .header{
+.team-container .first-row .first-col, .team-container .first-row .second-col{
+    width: 40%;
+}
+
+.team-container .first-row .first-col .header{
     font-size: 30px;
     font-weight: bolder;
 }
 
-.team-container .first-row .para{
-    width: 50%;
+.team-container .first-row .second-col{
+    box-shadow: 15px 15px 0px black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.team-container .first-row .second-col img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .team-container .second-row{

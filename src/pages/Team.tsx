@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Team.css'
+import TeamImg from '../assets/team.jpg'
 
 import memberPhoto1 from "../assets/images/member/1.jpg";
 import memberPhoto2 from "../assets/images/member/2.jpg";
@@ -82,12 +83,17 @@ const Team: React.FC = () => {
     return (
         <div className='team-container'>
             <div className="first-row">
-                <div className="header">Meet Our Team</div>
-                <div className="para">
-                    The talented individuals behind Pearl Softech's success
-                    <br />
-                    <br />
-                    Our diverse team of experts is passionate about delivering innovative solutions that drive your business forward.
+                <div className="first-col">
+                    <div className="header">Meet Our Team</div>
+                    <div className="para">
+                        The talented individuals behind Pearl Softech's success
+                        <br />
+                        <br />
+                        Our diverse team of experts is passionate about delivering innovative solutions that drive your business forward. With deep industry knowledge and a commitment to excellence, we leverage cutting-edge technologies to create customized, scalable, and future-ready solutions tailored to your unique needs. We thrive on challenges and continuously push the boundaries of innovation to help you stay ahead in a rapidly evolving digital landscape.
+                    </div>
+                </div>
+                <div className="second-col">
+                    <img src={TeamImg} alt="" />
                 </div>
             </div>
             <div className="second-row">
