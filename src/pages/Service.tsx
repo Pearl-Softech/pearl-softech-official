@@ -1,0 +1,94 @@
+import React from 'react'
+import '../styles/Service.css'
+import Img from '../assets/about.jpg'
+
+const Service: React.FC = () => {
+    return (
+        <div className='service-container'>
+            <div className="first-row">
+                <div className="first-col">
+                    <div className="header">Our Services</div>
+                    <div className="snippet">Comprehensive technology solutions tailored to your business needs</div>
+                    <div className="para">At Pearl Softech, we offer a wide range of services designed to help businesses thrive in the digital landscape. From custom software and web development to digital marketing, our expert team delivers innovative solutions that drive growth and success.</div>
+                </div>
+                <div className="second-col">
+                    <img src={Img} alt="" />
+                </div>
+            </div>
+            <div className="second-row">
+                <div className="header">Our Service Categories</div>
+                <div className="para">Comprehensive solutions for all your technology needs</div>
+                <div className="wrapper">
+                    <div className="item">
+                        <i className='fa-solid fa-code'></i>
+                        <div className="name">Software Development</div>
+                        <div className="desc">Custom websites and applications built with the latest technologies to deliver exceptional user experiences</div>
+                    </div>
+                    <div className="item">
+                        <i className='fa-solid fa-magnifying-glass'></i>
+                        <div className="name">Digital Marketing</div>
+                        <div className="desc">Boost your online presence and reach your target audience</div>
+                    </div>
+                </div>
+            </div>
+            <div className="third-row">
+                <div className="first-col">
+                    <div className="header">Digital Marketing Services</div>
+                    <div className="row">
+                        <div className="first">
+                            <div className="title"><i className='fa-solid fa-circle-check'></i>Influence Campaigning</div>
+                            <div className="desc">Strategic campaigns designed to build brand authority and influence in your industry.</div>
+                        </div>
+                        <div className="second">
+                            <div className="title"><i className='fa-solid fa-circle-check'></i>Digital Profile Management</div>
+                            <div className="desc">Comprehensive management of your online presence across all digital platforms.</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="second-col">
+                    <div className="header">Platforms We Serve</div>
+                    <div className="grid">
+                        <div className="item">
+                            <i className='fa-brands fa-google'></i>
+                            <div className="name">Google (SEO)</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-solid fa-globe'></i>
+                            <div className="name">Webpages</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-facebook'></i>
+                            <div className="name">Facebook</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-youtube'></i>
+                            <div className="name">Youtube</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-youtube'></i>
+                            <div className="name">Instagram</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-x-twitter'></i>
+                            <div className="name">Twitter (X)</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-tiktok'></i>
+                            <div className="name">TikTok</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-linkedin'></i>
+                            <div className="name">Linkedin</div>
+                        </div>
+                        <div className="item">
+                            <i className='fa-brands fa-whatsapp'></i>
+                            <div className="name">Whatsapp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Service

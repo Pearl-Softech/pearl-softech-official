@@ -1,0 +1,127 @@
+.contact-container{
+    margin-top: 72.4px;
+}
+
+.contact-container .first-row{
+    padding: 100px;
+    background-color: #F1F3F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .first-row .header, .contact-container .second-row .header{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.contact-container .second-row{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-container .second-row .first-col{
+    width: 40%;
+}
+
+.contact-container .second-row .first-col .info{
+    margin-top: 20px;
+}
+
+.contact-container .second-row .first-col .info i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-container .second-row .first-col .socials{
+    margin-top: 20px;
+}
+
+.contact-container .second-row .first-col .socials .title{
+    font-weight: bolder;
+}
+
+.contact-container .second-row .first-col .socials a{
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.contact-container .second-row .second-col{
+    width: 40%;
+}
+ 
+.contact-container .second-row .first-col .header{
+    font-weight: bolder;
+}
+
+.contact-container .second-row .second-col form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-container .second-row .second-col form .top-input{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-container .second-row .second-col form input{
+    height: 50px;
+}
+
+.contact-container .second-row .second-col form textarea{
+    height: 200px;
+}
+
+.contact-container .second-row .second-col form button{
+    background-color: black;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+    font-family: "Poppins", serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-container .second-row .second-col form button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 760px){
+    .contact-container .first-row{
+        text-align: center;
+        padding: 20px;
+    }
+    .contact-container .first-row .header{
+        font-size: 25px;
+    }
+
+    .contact-container .second-row{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-container .second-row .first-col, .contact-container .second-row .second-col{
+        width: 100%;
+    }
+
+    .contact-container .second-row .first-col .header, .contact-container .second-row .second-col .header{
+        font-size: 25px;
+    }
+
+    .contact-container .second-row .second-col{
+        background-color: #F1F3F6;
+        padding: 20px;
+        border-radius: 8px;
+    }
+}
+

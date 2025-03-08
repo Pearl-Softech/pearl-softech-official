@@ -76,7 +76,7 @@
     background-color: #f1f3f6;
     padding: 20px;
     border-radius: 8px;
-    width: 40%;
+    width: 400px;
 }
 
 .about-container .second-row .col span{
@@ -95,8 +95,16 @@
     padding: 100px;
     background-color: #F1F3F6;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: space-between;
+}
+
+.about-container .third-row .first-col{
+    width: 40%;
+}
+
+.about-container .third-row .second-col{
+    width: 40%;
 }
 
 .about-container .third-row .header{
@@ -126,8 +134,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -247,6 +253,25 @@
     }
 }
 
+@media screen and (max-width: 1000px){
+    .about-container .third-row{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-container .third-row .header{
+        font-size: 25px;
+    }
+
+    .about-container .third-row .first-col, .about-container .third-row .second-col{
+        width: 100%;
+    }
+
+    .about-container .third-row .second-col .grid .item{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 760px){
     .about-container .first-row{
         padding: 20px;
@@ -269,19 +294,6 @@
     }
 
     .about-container .second-row .col{
-        width: 100%;
-    }
-
-    .about-container .third-row{
-        padding: 20px;
-        flex-direction: column;
-    }
-
-    .about-container .third-row .header{
-        font-size: 25px;
-    }
-
-    .about-container .third-row .second-col .grid .item{
         width: 100%;
     }
 

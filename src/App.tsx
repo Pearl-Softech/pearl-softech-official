@@ -4,6 +4,9 @@ import Home from './pages/Home'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import About from './pages/About'
+import Team from './pages/Team'
+import Contact from './pages/Contact'
+import Service from './pages/Service'
 
 const App: React.FC = () => {
   return (
@@ -12,7 +15,10 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route index path='/' element={<Home />} />
-          <Route index path='/about' element={<About />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/service' element={<Service />} />
         </Routes>
       </main>
       <Footer />

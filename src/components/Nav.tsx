@@ -44,6 +44,7 @@ const Nav: React.FC = () => {
             <Link to={"/service"} onClick={closeMenu}>Service</Link>
             <Link to={"/team"} onClick={closeMenu}>Team</Link>
             <Link to={"/career"} onClick={closeMenu}>Career</Link>
+            <Link to={"/contact"} onClick={closeMenu}>Contact</Link>
           </div>
           :
           null
