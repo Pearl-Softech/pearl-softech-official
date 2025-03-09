@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
         <div className='contact-container'>
             <div className="first-row">
                 <div className="first-col">
-                    <div className="header">CONTACT US</div>
+                    <h1 className="header">CONTACT US</h1>
                     <div className="para">
                         <p className='quote'>We look forward to hearing from you and partnering for your future success</p>
                         <br />
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                 </div>
             </div>
             <div className="third-row">
-                <div className="header">OUR LOCATION</div>
+                <h1 className="header">OUR LOCATION</h1>
                 <div className="para quote">Below is an interactive map to guide you to our office.</div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1023.2869457672199!2d85.3253491442456!3d27.68801537309341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1741515609847!5m2!1sen!2snp" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

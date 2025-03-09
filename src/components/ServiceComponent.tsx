@@ -4,7 +4,7 @@ import '../styles/ServiceComponent.css'
 const ServiceComponent:React.FC = () => {
   return (
     <div className="service-component-container">
-        <div className="header">Our Services</div>
+        <h1 className="header">Our Services</h1>
         <div className="para quote">We offer a comprehensive range of technology solutions to help your business thrive in the digital landscape.</div>
         <div className="service-wrapper">
             <div className="service">

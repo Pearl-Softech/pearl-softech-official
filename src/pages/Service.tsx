@@ -7,7 +7,7 @@ const Service: React.FC = () => {
         <div className='service-container'>
             <div className="first-row">
                 <div className="first-col">
-                    <div className="header">Our Services</div>
+                    <h1 className="header">Our Services</h1>
                     <div className="snippet quote">Comprehensive technology solutions tailored to your business needs</div>
                     <div className="para">
                         At Pearl Softech, we provide a wide range of services to help businesses thrive in the digital landscape.
@@ -20,7 +20,7 @@ const Service: React.FC = () => {
                 </div>
             </div>
             <div className="second-row">
-                <div className="header">Our Service Categories</div>
+                <h1 className="header">Our Service Categories</h1>
                 <div className="para quote">Comprehensive solutions for all your technology needs</div>
                 <div className="wrapper">
                     <div className="item">
@@ -37,7 +37,7 @@ const Service: React.FC = () => {
             </div>
             <div className="third-row">
                 <div className="first-col">
-                    <div className="header">Digital Marketing Services</div>
+                    <h1 className="header">Digital Marketing Services</h1>
                     <div className="row">
                         <div className="first">
                             <div className="title"><i className='fa-solid fa-circle-check'></i>Influence Campaigning</div>
@@ -50,7 +50,7 @@ const Service: React.FC = () => {
                     </div>
                 </div>
                 <div className="second-col">
-                    <div className="header">Platforms We Serve</div>
+                    <h1 className="header">Platforms We Serve</h1>
                     <div className="grid">
                         <div className="item">
                             <i className='fa-brands fa-google'></i>

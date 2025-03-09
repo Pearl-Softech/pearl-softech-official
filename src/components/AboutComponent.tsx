@@ -10,7 +10,7 @@ const AboutComponent:React.FC = () => {
             <img src={AboutImg} alt="" />
         </div>
         <div className="right">
-            <div className="header">ABOUT PEARL SOFTECH</div>
+            <h1 className="header">ABOUT PEARL SOFTECH</h1>
             <div className="para">Founded with a passion for innovation, Pearls of Tech has been at the forefront of digital transformation since our inception.</div>
             <div className="list">
                 <div className="item">

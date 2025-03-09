@@ -84,7 +84,7 @@ const Team: React.FC = () => {
         <div className='team-container'>
             <div className="first-row">
                 <div className="first-col">
-                    <div className="header">Meet Our Team</div>
+                    <h1 className="header">Meet Our Team</h1>
                     <div className="para">
                         <p className='quote'>The talented individuals behind Pearl Softech's success</p>
                         <br />

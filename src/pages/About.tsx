@@ -7,9 +7,9 @@ const About: React.FC = () => {
         <div className="about-container">
             <div className="first-row">
                 <div className="first-col">
-                    <div className="header">
+                    <h1 className="header">
                         About Pearl Softech Pvt. Ltd.
-                    </div>
+                    </h1>
                     <br />
                     <div className="para">
                         Your trusted partner in Digital marketing, Software development, Cloud services, Penetration testing, and Cybersecurity.<br></br><br></br>Our mission is to empower businesses and individuals by providing secure, scalable, and innovative solutions that help businesses thrive in the digital age.

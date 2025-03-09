@@ -7,7 +7,7 @@ const Career: React.FC = () => {
         <div className='career-container'>
             <div className="first-row">
                 <div className="first-col">
-                    <div className="header">Join Pearl Softech</div>
+                    <h1 className="header">Join Pearl Softech</h1>
                     <div className="para">
                         <p className='quote'>Your chance to be a part of Something Bigger</p>
                         <br />

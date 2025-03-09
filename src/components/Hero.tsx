@@ -6,9 +6,9 @@ const Hero:React.FC = () => {
   return (
     <div className="hero-container">
         <div className="first-col">
-            <div className="hero-header">
+            <h1 className="hero-header">
             Innovative Tech Solutions for Your Business
-            </div>
+            </h1>
             <div className="hero-para">
             Your Trusted Partner for Digital Marketing, Cloud, Software, and Cybersecurity Solutions. Providing innovative solutions to enhance digital presence, optimize operational efficiency.
             </div>
