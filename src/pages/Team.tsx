@@ -86,8 +86,7 @@ const Team: React.FC = () => {
                 <div className="first-col">
                     <div className="header">Meet Our Team</div>
                     <div className="para">
-                        The talented individuals behind Pearl Softech's success
-                        <br />
+                        <p className='quote'>The talented individuals behind Pearl Softech's success</p>
                         <br />
                         Our diverse team of experts is passionate about delivering innovative solutions that drive your business forward. With deep industry knowledge and a commitment to excellence, we leverage cutting-edge technologies to create customized, scalable, and future-ready solutions tailored to your unique needs. We thrive on challenges and continuously push the boundaries of innovation to help you stay ahead in a rapidly evolving digital landscape.
                     </div>

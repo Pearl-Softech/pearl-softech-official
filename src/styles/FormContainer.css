@@ -12,16 +12,17 @@
 .form-component-container .first-col .header{
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .form-component-container .second-col .header{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 30px;
     font-weight: bolder;
 }
 
 .form-component-container .first-col .info{
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -37,7 +38,7 @@
 }
 
 .form-component-container .first-col .socials{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .form-component-container .first-col .socials .title{

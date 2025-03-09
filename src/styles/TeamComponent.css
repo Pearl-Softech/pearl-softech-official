@@ -32,6 +32,7 @@
 .team-component-container .right .header{
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .team-component-container .right .list{

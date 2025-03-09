@@ -9,8 +9,7 @@ const Career: React.FC = () => {
                 <div className="first-col">
                     <div className="header">Join Pearl Softech</div>
                     <div className="para">
-                        Your chance to be a part of Something Bigger
-                        <br />
+                        <p className='quote'>Your chance to be a part of Something Bigger</p>
                         <br />
                         At PearlsOfTech, we are driven by innovation and excellence. We offer a dynamic work environment where creativity meets technology, empowering professionals to build cutting-edge solutions. Join our team to collaborate with industry experts, enhance your skills, and shape the future of technology. Explore exciting career opportunities with us today!
                     </div>

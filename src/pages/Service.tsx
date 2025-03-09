@@ -8,7 +8,7 @@ const Service: React.FC = () => {
             <div className="first-row">
                 <div className="first-col">
                     <div className="header">Our Services</div>
-                    <div className="snippet">Comprehensive technology solutions tailored to your business needs</div>
+                    <div className="snippet quote">Comprehensive technology solutions tailored to your business needs</div>
                     <div className="para">At Pearl Softech, we provide a wide range of services to help businesses thrive in the digital landscape. From custom software and web development to AI solutions, cloud computing, and digital marketing, our expert team delivers innovative, scalable, and secure solutions tailored to your needs. Whether optimizing operations or enhancing your online presence, we ensure your business stays ahead in a rapidly evolving market.</div>
                 </div>
                 <div className="second-col">

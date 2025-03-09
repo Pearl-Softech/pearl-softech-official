@@ -14,7 +14,7 @@ const About: React.FC = () => {
                         Your trusted partner in Digital marketing, Software development, Cloud services, Penetration testing, and Cybersecurity.<br></br><br></br>Our mission is to empower businesses and individuals by providing secure, scalable, and innovative solutions that help businesses thrive in the digital age.
                     </div>
                     <div className="quote">
-                        &quot;Empowering Innovation, Elevating Digital Success&quot;
+                        Empowering Innovation, Elevating Digital Success
                     </div>
                 </div>
                 <div className="second-col">
@@ -23,7 +23,7 @@ const About: React.FC = () => {
             </div>
             <div className="second-row">
                 <div className="header">OUR JOURNEY</div>
-                <div className='quote'>&quot;From vision to industry leadership&quot;</div>
+                <div className='quote'>From vision to industry leadership</div>
                 <div className="para-top">
                     Founded in 2025, Pearl Softech started with a vision to revolutionize the technology landscape. Over the years, we have grown into a leading provider of comprehensive tech solutions, serving clients across various industries. Our commitment to innovation and excellence has been the driving force behind our success.
                     <br />

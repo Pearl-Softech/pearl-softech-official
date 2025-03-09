@@ -31,6 +31,7 @@
 .about-component-container .right .header{
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .about-component-container .right .list{
