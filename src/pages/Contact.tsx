@@ -1,12 +1,25 @@
 import React from 'react'
 import '../styles/Contact.css'
+import ContactImg from '../assets/contact.jpg'
 
 const Contact: React.FC = () => {
     return (
         <div className='contact-container'>
             <div className="first-row">
-                <div className="header">CONTACT US</div>
-                <div className="para">Get in touch with our team to discuss how we can help your business grow</div>
+                <div className="first-col">
+                    <div className="header">CONTACT US</div>
+                    <div className="para">
+                        <p className='quote'>We look forward to hearing from you and partnering for your future success</p>
+                        <br />
+                        Get in touch with our team to discuss how we can help your business grow. Whether you have a specific project in mind, need expert advice, or want to explore tailored solutions, we're here to assist you. Our dedicated professionals are eager to understand your goals and challenges, providing the right strategies to drive success.
+                        <br />
+                        <br />
+                        If you'd like to use our services, please email us through the form given below, and we will get back to you as soon as possible.
+                    </div>
+                </div>
+                <div className="second-col">
+                    <img src={ContactImg} alt="" />
+                </div>
             </div>
             <div className="second-row">
                 <div className="first-col">
@@ -24,7 +37,7 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 <div className="second-col">
-                <div className="header">Fill the form</div>
+                    <div className="header">Fill the form</div>
                     <form>
                         <div className="top-input">
                             <input type="text" placeholder='Company Name' />
@@ -34,6 +47,11 @@ const Contact: React.FC = () => {
                         <button>SUBMIT</button>
                     </form>
                 </div>
+            </div>
+            <div className="third-row">
+                <div className="header">OUR LOCATION</div>
+                <div className="para quote">Below is an interactive map to guide you to our office.</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1023.2869457672199!2d85.3253491442456!3d27.68801537309341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1741515609847!5m2!1sen!2snp" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     )
