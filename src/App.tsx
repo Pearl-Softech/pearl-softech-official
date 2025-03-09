@@ -8,6 +8,7 @@ import Team from './pages/Team'
 import Contact from './pages/Contact'
 import Service from './pages/Service'
 import ScrollToTop from './utils/ScrollToTop'
+import Career from './pages/Career'
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path='/team' element={<Team />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/service' element={<Service />} />
+            <Route path='/career' element={<Career />} />
           </Routes>
         </main>
         <Footer />
