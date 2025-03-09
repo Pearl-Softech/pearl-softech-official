@@ -22,11 +22,18 @@
 
 .form-component-container .first-col .info{
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
 }
 
 .form-component-container .first-col .info i{
     margin-right: 10px;
     font-size: 20px;
+    background-color: #F1F3F6;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .form-component-container .first-col .socials{
@@ -41,6 +48,15 @@
     margin-right: 10px;
     font-size: 20px;
     color: black;
+}
+
+.form-component-container .first-col .socials a i{
+    background-color: #F1F3F6;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
 
 .form-component-container .second-col form .top-input{
