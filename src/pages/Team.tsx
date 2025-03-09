@@ -1,6 +1,6 @@
-import React from 'react'
-import '../styles/Team.css'
-import TeamImg from '../assets/team.jpg'
+import React from 'react';
+import '../styles/Team.css';
+import TeamImg from '../assets/team.jpg';
 
 import memberPhoto1 from "../assets/images/member/1.jpg";
 import memberPhoto2 from "../assets/images/member/2.jpg";
@@ -95,7 +95,7 @@ const Team: React.FC = () => {
                     </div>
                 </div>
                 <div className="second-col">
-                    <img src={TeamImg} alt="" />
+                    <img src={TeamImg} alt="Team photo of Pearl Softech Pvt. Ltd." aria-label="Team photo of Pearl Softech Pvt. Ltd." />
                 </div>
             </div>
             <div className="second-row">
@@ -103,24 +103,47 @@ const Team: React.FC = () => {
                     teamMembers.map((member, index) => (
                         <div key={index} className="member">
                             <div className="picture">
-                                <img src={member.image} alt={"Profile picture of " + member.name + ", " + member.position + " at Pearl Softech Pvt. Ltd."} />
+                                <img
+                                    src={member.image}
+                                    alt={`Profile picture of ${member.name}, ${member.position} at Pearl Softech Pvt. Ltd.`}
+                                    aria-label={`Profile picture of ${member.name}, ${member.position} at Pearl Softech Pvt. Ltd.`}
+                                />
                             </div>
-                            <div className="name">{member.name}</div>
+                            <h2 className="name">{member.name}</h2>
                             <div className="position">{member.position}</div>
                             <div className="socials">
                                 {member.socials.facebook !== "#" && (
-                                    <a href={member.socials.linkedin}><i className="fa-brands fa-facebook"></i></a>
+                                    <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label={`Facebook profile of ${member.name}`}>
+                                        <i className="fa-brands fa-facebook"></i>
+                                    </a>
                                 )}
                                 {member.socials.linkedin !== "#" && (
-                                    <a href={member.socials.linkedin}><i className="fa-brands fa-linkedin"></i></a>
+                                    <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn profile of ${member.name}`}>
+                                        <i className="fa-brands fa-linkedin"></i>
+                                    </a>
                                 )}
                                 {member.socials.twitter !== "#" && (
-                                    <a href={member.socials.twitter}><i className="fa-brands fa-x-twitter"></i></a>
+                                    <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" aria-label={`Twitter profile of ${member.name}`}>
+                                        <i className="fa-brands fa-x-twitter"></i>
+                                    </a>
                                 )}
                                 {member.socials.github !== "#" && (
-                                    <a href={member.socials.github}><i className="fa-brands fa-github"></i></a>
+                                    <a href={member.socials.github} target="_blank" rel="noopener noreferrer" aria-label={`GitHub profile of ${member.name}`}>
+                                        <i className="fa-brands fa-github"></i>
+                                    </a>
                                 )}
                             </div>
+                            <script type="application/ld+json">
+                                {JSON.stringify({
+                                    "@context": "http://schema.org",
+                                    "@type": "Person",
+                                    "name": member.name,
+                                    "jobTitle": member.position,
+                                    "image": member.image,
+                                    "url": `https://www.pearlsoftech.com/team#${member.name.replace(/\s+/g, '-').toLowerCase()}`,
+                                    "sameAs": Object.values(member.socials).filter(social => social !== "#")
+                                })}
+                            </script>
                         </div>
                     ))
                 }
@@ -128,10 +151,10 @@ const Team: React.FC = () => {
             <div className="third-row">
                 <div className="header">Want to Join Our Team?</div>
                 <div className="para">We're always looking for talented individuals to join our growing team.</div>
-                <Link to={"/career"}>APPLY NOW</Link>
+                <Link to={"/career"} aria-label="Click here to apply for a job at Pearl Softech Pvt. Ltd.">APPLY NOW</Link>
             </div>
         </div>
-    )
+    );
 }
 
-export default Team
+export default Team;
