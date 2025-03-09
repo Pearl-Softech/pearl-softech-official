@@ -103,7 +103,7 @@ const Team: React.FC = () => {
                     teamMembers.map((member, index) => (
                         <div key={index} className="member">
                             <div className="picture">
-                                <img src={member.image} alt="" />
+                                <img src={member.image} alt={"Profile picture of " + member.name + ", " + member.position + " at Pearl Softech Pvt. Ltd."} />
                             </div>
                             <div className="name">{member.name}</div>
                             <div className="position">{member.position}</div>
