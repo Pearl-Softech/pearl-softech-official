@@ -38,6 +38,8 @@
 
 .nav-container .first-row .second-col .links a{
     color: black;
+    text-transform: uppercase;
+    font-weight: 600;
     text-decoration: none;
 }
 
