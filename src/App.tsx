@@ -7,21 +7,23 @@ import About from './pages/About'
 import Team from './pages/Team'
 import Contact from './pages/Contact'
 import Service from './pages/Service'
+import ScrollToTop from './utils/ScrollToTop'
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <Nav />
-      <main>
-        <Routes>
-          <Route index path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/team' element={<Team />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/service' element={<Service />} />
-        </Routes>
-      </main>
-      <Footer />
+      <ScrollToTop />
+        <Nav />
+        <main>
+          <Routes>
+            <Route index path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/team' element={<Team />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/service' element={<Service />} />
+          </Routes>
+        </main>
+        <Footer />
     </BrowserRouter>
   )
 }
