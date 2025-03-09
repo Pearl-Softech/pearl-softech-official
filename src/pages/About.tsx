@@ -10,6 +10,7 @@ const About: React.FC = () => {
                     <div className="header">
                         About Pearl Softech Pvt. Ltd.
                     </div>
+                    <br />
                     <div className="para">
                         Your trusted partner in Digital marketing, Software development, Cloud services, Penetration testing, and Cybersecurity.<br></br><br></br>Our mission is to empower businesses and individuals by providing secure, scalable, and innovative solutions that help businesses thrive in the digital age.
                     </div>

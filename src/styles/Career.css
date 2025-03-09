@@ -47,6 +47,11 @@
 .career-container .second-row .header{
     font-size: 25px;
     font-weight: bolder;
+    color: red;
+}
+
+.career-container .second-row .header i{
+    margin-right: 15px;
 }
 
 .career-container .second-row .para{

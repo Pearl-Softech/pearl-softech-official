@@ -88,7 +88,10 @@ const Team: React.FC = () => {
                     <div className="para">
                         <p className='quote'>The talented individuals behind Pearl Softech's success</p>
                         <br />
-                        Our diverse team of experts is passionate about delivering innovative solutions that drive your business forward. With deep industry knowledge and a commitment to excellence, we leverage cutting-edge technologies to create customized, scalable, and future-ready solutions tailored to your unique needs. We thrive on challenges and continuously push the boundaries of innovation to help you stay ahead in a rapidly evolving digital landscape.
+                        Our diverse team of experts is passionate about delivering innovative solutions that drive your business forward. With deep industry knowledge and a commitment to excellence, we leverage cutting-edge technologies to create customized, scalable, and future-ready solutions tailored to your unique needs.
+                        <br />
+                        <br />
+                        We thrive on challenges and continuously push the boundaries of innovation to help you stay ahead in a rapidly evolving digital landscape.
                     </div>
                 </div>
                 <div className="second-col">

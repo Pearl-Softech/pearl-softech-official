@@ -9,7 +9,11 @@ const Service: React.FC = () => {
                 <div className="first-col">
                     <div className="header">Our Services</div>
                     <div className="snippet quote">Comprehensive technology solutions tailored to your business needs</div>
-                    <div className="para">At Pearl Softech, we provide a wide range of services to help businesses thrive in the digital landscape. From custom software and web development to AI solutions, cloud computing, and digital marketing, our expert team delivers innovative, scalable, and secure solutions tailored to your needs. Whether optimizing operations or enhancing your online presence, we ensure your business stays ahead in a rapidly evolving market.</div>
+                    <div className="para">
+                        At Pearl Softech, we provide a wide range of services to help businesses thrive in the digital landscape.
+                        <br />
+                        <br />
+                        From custom software and web development to AI solutions, cloud computing, and digital marketing, our expert team delivers innovative, scalable, and secure solutions tailored to your needs. Whether optimizing operations or enhancing your online presence, we ensure your business stays ahead in a rapidly evolving market.</div>
                 </div>
                 <div className="second-col">
                     <img src={Img} alt="" />
@@ -17,7 +21,7 @@ const Service: React.FC = () => {
             </div>
             <div className="second-row">
                 <div className="header">Our Service Categories</div>
-                <div className="para">Comprehensive solutions for all your technology needs</div>
+                <div className="para quote">Comprehensive solutions for all your technology needs</div>
                 <div className="wrapper">
                     <div className="item">
                         <i className='fa-solid fa-code'></i>

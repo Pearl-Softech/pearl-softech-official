@@ -19,7 +19,7 @@ const Career: React.FC = () => {
                 </div>
             </div>
             <div className="second-row">
-                <div className="header">No Current Job Openings</div>
+                <div className="header"><i className="fa-solid fa-briefcase"></i>No Current Job Openings</div>
                 <div className="para">Thank you for your interest in joining PearlsOfTech. At the moment, we are not hiring and do not have any vacancies. Please check back later for future opportunities.</div>
             </div>
         </div>
