@@ -201,6 +201,9 @@
         padding: 20px;
         border-radius: 8px;
     }
+    .contact-container .third-row{
+        padding: 20px;
+    }
     .contact-container .third-row .header{
         font-size: 25px;
     }
