@@ -1,11 +1,15 @@
 import React from 'react'
 import '../styles/Contact.css'
 import ContactImg from '../assets/contact.jpg'
+import ContactInner from '../assets/contact-inner.jpg'
 
 const Contact: React.FC = () => {
     return (
         <div className='contact-container'>
             <div className="first-row">
+            <div className="background">
+                <img src={ContactInner} alt="" />
+                </div>
                 <div className="first-col">
                     <h1 className="header">CONTACT US</h1>
                     <div className="para">
@@ -50,7 +54,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="third-row">
                 <h1 className="header">OUR LOCATION</h1>
-                <div className="para quote">Below is an interactive map to guide you to our office.</div>
+                <div className="para quote quote-dark">Below is an interactive map to guide you to our office.</div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9847090862195!2d85.322715375253!3d27.686867476194312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190019faee4f%3A0x1d7f3841eecfb841!2sPearl%20Softech%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1741859312795!5m2!1sen!2snp" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

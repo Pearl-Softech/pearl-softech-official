@@ -19,7 +19,7 @@
 }
 
 .hero-container .first-col .hero-para{
-    color: black;
+    color: rgb(240, 240, 240);
     margin-top: 20px;
 }
 
@@ -34,41 +34,40 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: bolder;
     cursor: pointer;
-    border: 2px solid black;
+    border: 3.5px solid white;
     transition: 0.3s ease-in-out;
 }
 
 .hero-container .first-col .buttons a:first-child{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
 }
 
 .hero-container .first-col .buttons a:first-child:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.hero-container .first-col .buttons a:nth-child(2){
+    color: white;
+}
+
+.hero-container .first-col .buttons a:nth-child(2):hover{
     background-color: white;
     color: black;
 }
 
-.hero-container .first-col .buttons a:nth-child(2){
-    color: black;
-}
-
-.hero-container .first-col .buttons a:nth-child(2):hover{
-    background-color: black;
-    color: white;
-}
-
 .hero-container .second-col{
     width: 40%;
-    height: 500px;
+    height: fit-content;
 }
 
 .hero-container .second-col img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transform: scaleX(-1);
 }
 
 @media screen and (max-width: 1000px){

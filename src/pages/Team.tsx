@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Team.css';
 import TeamImg from '../assets/team.jpg';
+import TeamInner from '../assets/team-inner.jpg'
 
 import memberPhoto1 from "../assets/images/member/1.jpg";
 import memberPhoto2 from "../assets/images/member/2.jpg";
@@ -83,6 +84,9 @@ const Team: React.FC = () => {
     return (
         <div className='team-container'>
             <div className="first-row">
+            <div className="background">
+                <img src={TeamInner} alt="" />
+                </div>
                 <div className="first-col">
                     <h1 className="header">Meet Our Team</h1>
                     <div className="para">

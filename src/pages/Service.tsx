@@ -1,11 +1,15 @@
 import React from 'react'
 import '../styles/Service.css'
 import Img from '../assets/service.jpg'
+import ServiceInner from '../assets/service-inner.jpg'
 
 const Service: React.FC = () => {
     return (
         <div className='service-container'>
             <div className="first-row">
+            <div className="background">
+                <img src={ServiceInner} alt="" />
+                </div>
                 <div className="first-col">
                     <h1 className="header">Our Services</h1>
                     <div className="snippet quote">Comprehensive technology solutions tailored to your business needs</div>

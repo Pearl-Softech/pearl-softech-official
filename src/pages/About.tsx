@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import '../styles/About.css'
 import AboutImg from '../assets/about.jpg'
+import AboutInner from '../assets/about-inner.jpg'
 
 const About: React.FC = () => {
     return (
         <div className="about-container">
             <div className="first-row">
+                <div className="background">
+                <img src={AboutInner} alt="" />
+                </div>
                 <div className="first-col">
                     <h1 className="header">
                         About Pearl Softech Pvt. Ltd.

@@ -9,7 +9,7 @@
 .about-component-container .left{
     height: 300px;
     width: 40%;
-    box-shadow: 15px 15px 0px black;
+    box-shadow: 15px 15px 0px white;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -52,25 +52,26 @@
     padding-right: 12px;
     border-radius: 50%;
     margin-right: 5px;
+    color: var(--primary-color);
     background-color: #F1F3F6;
 }
 
 .about-component-container .right a{
-    color: white;
-    background-color: black;
+    color: var(--primary-color);
+    background-color: white;
     width: fit-content;
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bolder;
     margin-top: 25px;
     transition: 0.3s ease-in-out;
-    border: 2px solid black;
+    border: 3.5px solid white;
 }
 
 .about-component-container .right a:hover{
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
 }
 
 @media screen and (max-width: 760px){
@@ -84,7 +85,7 @@
     }
     .about-component-container .left{
         width: 100%;
-        box-shadow: 8px 8px 0px black;
+        box-shadow: 8px 8px 0px white;
     }
     .about-component-container .right{
         width: 100%;

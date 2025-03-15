@@ -4,12 +4,29 @@
 
 .team-container .first-row{
     padding: 100px;
-    background-color: #F1F3F6;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.team-container .first-row .background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary-color);
+}
+
+.team-container .first-row .background img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }
 
 .team-container .first-row .first-col, .team-container .first-row .second-col{
@@ -22,7 +39,7 @@
 }
 
 .team-container .first-row .second-col{
-    box-shadow: 15px 15px 0px black;
+    box-shadow: 15px 15px 0px white;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 300px;
@@ -50,20 +67,21 @@
     cursor: pointer;
     width: 300px;
     height: 300px;
-    background-color: #F1F3F6;
+    background-color: white;
+    color: var(--primary-color);
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px 0px black;
+    box-shadow: 10px 10px 0px #001c2d;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     transition: 0.5s ease-in-out;
 }
 
 .team-container .second-row .member:hover{
-    box-shadow: -10px -10px 0px black;
+    box-shadow: -10px -10px 0px #001c2d;
 }
 
 .team-container .second-row .member .picture{
@@ -100,7 +118,7 @@
 
 .team-container .second-row .member .socials a{
     font-size: 22px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .team-container .third-row{
@@ -110,7 +128,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #F1F3F6;
+    background-color: white;
+    color: var(--primary-color);
 }
 
 .team-container .third-row .header{
@@ -120,19 +139,19 @@
 
 .team-container .third-row a{
     padding: 10px;
-    background-color: black;
+    background-color: var(--primary-color);
     margin-top: 10px;
     border-radius: 8px;
     color: white;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid black;
+    border: 3.5px solid var(--primary-color);
     transition: 0.3s ease-in-out;
 }
 
 .team-container .third-row a:hover{
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 1100px){
@@ -146,7 +165,7 @@
     }
 
     .team-container .first-row .second-col{
-        box-shadow: 8px 8px 0px black;
+        box-shadow: 8px 8px 0px white;
     }
 }
 

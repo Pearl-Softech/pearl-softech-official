@@ -34,6 +34,7 @@
     font-size: 20px;
     background-color: #F1F3F6;
     padding: 10px;
+    color: var(--primary-color);
     border-radius: 50%;
 }
 
@@ -53,6 +54,7 @@
 
 .form-component-container .first-col .socials a i{
     background-color: #F1F3F6;
+    color: var(--primary-color);
     padding: 10px;
     padding-left: 12px;
     padding-right: 12px;
@@ -75,10 +77,15 @@
     height: 50px;
 }
 
+input::placeholder, textarea::placeholder{
+    color: var(--primary-color);
+}
+
 input, textarea{
+    color: var(--primary-color);
     border-radius: 8px;
     padding: 10px;
-    border: 2px solid #d9d9d9;
+    border: 2px solid white;
     font-family: "Poppins", serif;
     width: 100%;
     font-size: 16px;
@@ -89,20 +96,21 @@ input, textarea{
 }
 
 .form-component-container .second-col form button{
-    background-color: black;
-    font-weight: 600;
+    background-color: #001c2d;
+    border: 3.5px solid #001c2d;
+    font-weight: bolder;
     color: white;
     padding: 15px;
     font-family: "Poppins", serif;
-    border: 2px solid black;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .form-component-container .second-col form button:hover{
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    border-color: white;
+    color: white;
 }
 
 @media screen and (max-width: 760px){

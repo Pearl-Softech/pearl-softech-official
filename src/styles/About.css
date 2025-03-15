@@ -3,13 +3,30 @@
 }
 
 .about-container .first-row{
-    background-color: #F1F3F6;
     padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.about-container .first-row .background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary-color);
+}
+
+.about-container .first-row .background img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }
 
 .about-container .first-row .first-col{
@@ -27,7 +44,7 @@
 
 .about-container .first-row .second-col{
     width: 40%;
-    box-shadow: 15px 15px 0px black;
+    box-shadow: 15px 15px 0px white;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 300px;
@@ -68,7 +85,8 @@
 }
 
 .about-container .second-row .col{
-    background-color: #f1f3f6;
+    background-color: white;
+    color: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     width: 400px;
@@ -87,6 +105,7 @@
 }
 
 .about-container .third-row{
+    color: var(--primary-color);
     padding: 100px;
     background-color: #F1F3F6;
     display: flex;
@@ -133,7 +152,7 @@
 }
 
 .about-container .third-row .second-col .grid .item{
-    border: 2px solid #e1e1e1;
+    border: 3.5px solid var(--primary-color);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -155,8 +174,8 @@
 }
 
 .about-container .third-row .second-col .grid .item:hover{
-    background-color: white;
-    border-color: white;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .about-container .fourth-row{
@@ -183,7 +202,7 @@
 }
 
 .about-container .fourth-row .grid .item{
-    background-color: #F1F3F6;
+    background-color: white;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -193,6 +212,7 @@
     width: 300px;
     gap: 5px;
     border-radius: 8px;
+    color: var(--primary-color);
 }
 
 .about-container .fourth-row .grid .item i{
@@ -206,7 +226,8 @@
 
 .about-container .fifth-row{
     padding: 100px;
-    background-color: #F1F3F6;
+    background-color: white;
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,19 +240,19 @@
 
 .about-container .fifth-row a{
     margin-top: 20px;
-    background-color: black;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 8px;
     color: white;
-    border: 2px solid black;
+    border: 3.5px solid var(--primary-color);
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
 .about-container .fifth-row a:hover{
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 950px){
@@ -263,7 +284,7 @@
     }
 
     .about-container .first-row .second-col{
-        box-shadow: 8px 8px 0px black;
+        box-shadow: 8px 8px 0px white;
     }
 
     .about-container .third-row .second-col .grid .item{

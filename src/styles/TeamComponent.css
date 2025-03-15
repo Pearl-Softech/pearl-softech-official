@@ -5,12 +5,13 @@
     justify-content: space-between;
     gap: 20px;
     background-color: #F1F3F6;
+    color: var(--primary-color);
 }
 
 .team-component-container .left{
     height: 300px;
     width: 40%;
-    box-shadow: -15px -15px 0px black;
+    box-shadow: -15px -15px 0px var(--primary-color);
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -58,7 +59,7 @@
 
 .team-component-container .right a{
     color: white;
-    background-color: black;
+    background-color: var(--primary-color);
     width: fit-content;
     padding: 10px;
     border-radius: 8px;
@@ -66,11 +67,11 @@
     font-weight: 600;
     margin-top: 25px;
     transition: 0.3s ease-in-out;
-    border: 2px solid black;
+    border: 3.5px solid var(--primary-color);
 }
 
 .team-component-container .right a:hover{
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
@@ -83,7 +84,7 @@
         font-size: 25px;
     }
     .team-component-container .left{
-        box-shadow: -8px 8px 0px black;
+        box-shadow: -8px 8px 0px var(--primary-color);
         width: 100%;
     }
     .team-component-container .right{

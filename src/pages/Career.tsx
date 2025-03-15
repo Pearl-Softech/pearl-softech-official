@@ -1,11 +1,15 @@
 import React from 'react'
 import '../styles/Career.css'
 import CareerImg from '../assets/career.jpeg'
+import CareerInner from '../assets/career-inner.jpg'
 
 const Career: React.FC = () => {
     return (
         <div className='career-container'>
             <div className="first-row">
+            <div className="background">
+                <img src={CareerInner} alt="" />
+                </div>
                 <div className="first-col">
                     <h1 className="header">Join Pearl Softech</h1>
                     <div className="para">

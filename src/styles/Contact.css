@@ -2,14 +2,31 @@
     margin-top: 72.4px;
 }
 
-.contact-container .first-row {
+.contact-container .first-row{
     padding: 100px;
-    background-color: #F1F3F6;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.contact-container .first-row .background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary-color);
+}
+
+.contact-container .first-row .background img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }
 
 .contact-container .first-row .first-col,
@@ -23,7 +40,7 @@
 }
 
 .contact-container .first-row .second-col {
-    box-shadow: 15px 15px 0px black;
+    box-shadow: 15px 15px 0px white;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 300px;
@@ -67,7 +84,8 @@
 .contact-container .second-row .first-col .info i {
     margin-right: 10px;
     font-size: 20px;
-    background-color: #F1F3F6;
+    background-color: white;
+    color: var(--primary-color);
     padding: 10px;
     border-radius: 50%;
 }
@@ -83,11 +101,11 @@
 .contact-container .second-row .first-col .socials a {
     margin-right: 10px;
     font-size: 20px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .contact-container .second-row .first-col .socials a i {
-    background-color: #F1F3F6;
+    background-color: white;
     padding: 10px;
     padding-left: 12px;
     padding-left: 12px;
@@ -124,20 +142,20 @@
 }
 
 .contact-container .second-row .second-col form button {
-    background-color: black;
-    font-weight: 600;
+    background-color: #001c2d;
+    font-weight: bolder;
     color: white;
+    border: 3.5px solid #001c2d;
     padding: 15px;
     font-family: "Poppins", serif;
-    border: 2px solid black;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .contact-container .second-row .second-col form button:hover {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    border-color: white;
 }
 
 .contact-container .third-row{
@@ -148,7 +166,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F1F3F6;
+    background-color: white;
+    color: var(--primary-color);
 }
 
 .contact-container .third-row .header{
@@ -158,9 +177,10 @@
 
 .contact-container .third-row iframe{
     width: 100%;
-    border-radius: 8px;
-    border: 5px solid black;
-    box-shadow: 15px 15px 0px black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 5px solid var(--primary-color);
+    box-shadow: 15px 15px 0px var(--primary-color);
     margin-top: 25px;
 }
 @media screen and (max-width: 1100px) {
@@ -175,7 +195,7 @@
     }
 
     .contact-container .first-row .second-col {
-        box-shadow: 8px 8px 0px black;
+        box-shadow: 8px 8px 0px white;
     }
 }
 
