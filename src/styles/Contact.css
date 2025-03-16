@@ -224,7 +224,7 @@
     }
     input, textarea{
         border: 3.5px solid var(--primary-color);
-        font-size: 14px;
+        font-size: 12px;
     }
     .contact-container .third-row{
 

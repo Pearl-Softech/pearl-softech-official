@@ -131,7 +131,7 @@ input, textarea{
         border-radius: 8px;
     }
     input, textarea{
-        font-size: 14px;
+        font-size: 12px;
         border: 3.5px solid var(--primary-color)
     }
     input{
