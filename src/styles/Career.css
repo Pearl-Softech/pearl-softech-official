@@ -96,7 +96,11 @@
     .career-container .second-row{
         padding: 20px;
     }
+    .career-container .second-row .header{
+        font-size: 18px;
+    }
     .career-container .second-row .para{
         width: 100%;
+        font-size: 14px;
     }
 }

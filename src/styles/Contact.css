@@ -217,11 +217,17 @@
     }
 
     .contact-container .second-row .second-col {
-        background-color: #F1F3F6;
+        color: var(--primary-color);
+        background-color: white;
         padding: 20px;
         border-radius: 8px;
     }
+    input, textarea{
+        border: 3.5px solid var(--primary-color);
+        font-size: 14px;
+    }
     .contact-container .third-row{
+
         padding: 20px;
     }
     .contact-container .third-row .header{

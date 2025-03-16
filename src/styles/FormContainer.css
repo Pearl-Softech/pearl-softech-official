@@ -125,12 +125,14 @@ input, textarea{
         font-size: 25px;
     }
     .form-component-container .second-col{
-        background-color: #F1F3F6;
+        background-color: white;
+        color: var(--primary-color);
         padding: 20px;
         border-radius: 8px;
     }
     input, textarea{
-        font-size: 12px;
+        font-size: 14px;
+        border: 3.5px solid var(--primary-color)
     }
     input{
         height: 20px;
