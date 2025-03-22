@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import '../styles/Blog.css'
 
 const Blog = () => {
+    const API_KEY = import.meta.env.VITE_API_KEY;
+  const SERVER_IP = import.meta.env.VITE_SERVER_IP;
     const { id } = useParams(); // Get the `id` from the URL
     const [blogPost, setBlogPost] = useState(null); // State to store the blog post data
     const [loading, setLoading] = useState(true); // Loading state for API call
@@ -11,7 +13,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchBlogPost = async () => {
             try {
-                const response = await fetch(`http://192.168.1.64:8080/get-blog/${id}`, {
+                const response = await fetch(`${SERVER_IP}:8080/get-blog/${id}`, {
                     method: "GET",
                     headers: {
                         'x-api-key': "abc"
