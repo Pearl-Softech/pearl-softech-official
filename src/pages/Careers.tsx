@@ -1,14 +1,14 @@
 import React from 'react'
-import '../styles/Career.css'
-import CareerImg from '../assets/career.jpeg'
-import CareerInner from '../assets/career-inner.jpg'
+import '../styles/Careers.css'
+import CareersImg from '../assets/careers.jpeg'
+import CareersInner from '../assets/careers-inner.jpg'
 
-const Career: React.FC = () => {
+const Careers: React.FC = () => {
     return (
-        <div className='career-container'>
+        <div className='careers-container'>
             <div className="first-row">
             <div className="background">
-                <img src={CareerInner} alt="" />
+                <img src={CareersInner} alt="" />
                 </div>
                 <div className="first-col">
                     <h1 className="header">Join Pearl Softech</h1>
@@ -22,7 +22,7 @@ const Career: React.FC = () => {
                     </div>
                 </div>
                 <div className="second-col">
-                    <img src={CareerImg} alt="" />
+                    <img src={CareersImg} alt="" />
                 </div>
             </div>
             <div className="second-row">
@@ -33,4 +33,4 @@ const Career: React.FC = () => {
     )
 }
 
-export default Career
+export default Careers

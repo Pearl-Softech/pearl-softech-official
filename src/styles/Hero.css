@@ -7,6 +7,7 @@
     height: 100dvh;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-color);
 }
 
 .hero-container .first-col{
@@ -88,6 +89,7 @@
         padding: 20px;
         margin-top: 72.4px;
         margin-bottom: 50px;
+        height: fit-content;
     }
     .hero-container .first-col{
         width: 100%;

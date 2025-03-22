@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: var(--primary-color);
 }
 
 .service-container .second-row .header{

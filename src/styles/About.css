@@ -60,6 +60,7 @@
 
 .about-container .second-row{
     padding: 100px;
+    background-color: var(--primary-color);
 }
 
 .about-container .second-row .header{
@@ -184,6 +185,7 @@
     padding: 100px;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
 .about-container .fourth-row .header{

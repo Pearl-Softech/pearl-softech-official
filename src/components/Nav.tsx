@@ -23,7 +23,9 @@ const Nav: React.FC = () => {
             <Link to={"/about"} onClick={closeMenu}>About</Link>
             <Link to={"/service"} onClick={closeMenu}>Service</Link>
             <Link to={"/team"} onClick={closeMenu}>Team</Link>
-            <Link to={"/career"} onClick={closeMenu}>Career</Link>
+            <Link to={"/careers"} onClick={closeMenu}>Career</Link>
+            <Link to={"/blogs"} onClick={closeMenu}>Blog</Link>
+            <Link to={"/testimonials"} onClick={closeMenu}>Testimonial</Link>
           </div>
         </div>
         <div className="third-col">
@@ -43,7 +45,9 @@ const Nav: React.FC = () => {
             <Link to={"/about"} onClick={closeMenu}>About</Link>
             <Link to={"/service"} onClick={closeMenu}>Service</Link>
             <Link to={"/team"} onClick={closeMenu}>Team</Link>
-            <Link to={"/career"} onClick={closeMenu}>Career</Link>
+            <Link to={"/careers"} onClick={closeMenu}>Career</Link>
+            <Link to={"/blogs"} onClick={closeMenu}>Blog</Link>
+            <Link to={"/testimonials"} onClick={closeMenu}>Testimonial</Link>
             <Link to={"/contact"} onClick={closeMenu}>Contact</Link>
           </div>
           :

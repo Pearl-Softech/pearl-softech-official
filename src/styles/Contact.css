@@ -67,6 +67,7 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
+    background-color: var(--primary-color);
 }
 
 .contact-container .second-row .first-col {
