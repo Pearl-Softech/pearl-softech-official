@@ -13,10 +13,10 @@ const Blog = () => {
     useEffect(() => {
         const fetchBlogPost = async () => {
             try {
-                const response = await fetch(`${SERVER_IP}/get-blog/${id}`, {
+                const response = await fetch(`${SERVER_IP}:8080/get-blog/${id}`, {
                     method: "GET",
                     headers: {
-                        'x-api-key': "abc"
+                        'x-api-key': API_KEY
                     }
                 });
                 if (!response.ok) {

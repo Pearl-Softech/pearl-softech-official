@@ -6,12 +6,11 @@ function Blogs() {
   const API_KEY = import.meta.env.VITE_API_KEY;
   const SERVER_IP = import.meta.env.VITE_SERVER_IP;
   const [blogs, setBlogs] = useState([]);
-  console.log(`${SERVER_IP}/get-blogs`);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`${SERVER_IP}/get-blogs`, {
+        const response = await fetch(`${SERVER_IP}:8080/get-blogs`, {
           method: 'GET',
           headers: {
             'x-api-key': API_KEY
