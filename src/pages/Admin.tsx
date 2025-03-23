@@ -18,8 +18,7 @@ const Admin = () => {
 
   return (
     <div className="admin-container">
-      <i className="fas fa-external-link-alt"></i>
-      <h2>Redirecting{dots}</h2>
+      <h2>REDIRECTING{dots}</h2>
     </div>
   );
 };
