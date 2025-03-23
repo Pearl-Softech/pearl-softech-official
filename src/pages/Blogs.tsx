@@ -13,8 +13,9 @@ function Blogs() {
         const response = await fetch(`${SERVER_IP}/get-blogs`, {
           method: 'GET',
           headers: {
-            'x-api-key': API_KEY
-          }
+            'x-api-key': API_KEY,
+          },
+          mode: 'no-cors'
         });
         const data = await response.json();
         if (response.ok) {
