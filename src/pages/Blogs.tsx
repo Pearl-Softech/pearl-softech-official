@@ -36,7 +36,7 @@ function Blogs() {
         blogs.length !=0?
         null
         :
-        <div style={{color: "black", display:'flex', width:"100%", height: "65dvh", justifyContent:'center', alignItems: "center"}}>
+        <div style={{color: "var(--primary-color)", display:'flex', width:"100%", height: "65dvh", justifyContent:'center', alignItems: "center"}}>
           <h2>LOADING...</h2>
         </div>
       }
