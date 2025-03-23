@@ -6,6 +6,15 @@ function Blogs() {
   const API_KEY = import.meta.env.VITE_API_KEY;
   const SERVER_IP = import.meta.env.VITE_SERVER_IP;
   const [blogs, setBlogs] = useState([]);
+  const [loadingDots, setLoadingDots] = useState('');
+
+  // Dots animation effect for loading
+  useEffect(() => {
+    const dotInterval = setInterval(() => {
+      setLoadingDots(prev => (prev.length < 3 ? prev + '.' : ''));
+    }, 500);
+    return () => clearInterval(dotInterval);
+  }, []);
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -37,7 +46,7 @@ function Blogs() {
         null
         :
         <div style={{color: "var(--primary-color)", display:'flex', width:"100%", height: "65dvh", justifyContent:'center', alignItems: "center"}}>
-          <h2>LOADING...</h2>
+          <h2>LOADING{loadingDots}</h2>
         </div>
       }
       <div className="blog-flex-box">

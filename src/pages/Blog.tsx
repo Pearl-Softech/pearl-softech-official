@@ -31,6 +31,19 @@ const Blog = () => {
             }
         };
 
+        const incrementViews = async ()=>{
+            try{
+                const response = await fetch(`${SERVER_IP}/blog/increment-views/${blogPost._id}`, {
+                    method: "PUT",
+                    headers: {
+                        'x-api-key': API_KEY
+                    }
+                });
+            }catch(err){
+                console.log(err);
+            }
+        }
+
         fetchBlogPost();
     }, [id]); // Re-run when the `id` changes
 
@@ -50,6 +63,7 @@ const Blog = () => {
         <div className='blog-container'>
             <main>
                 <h1 className="blog-card-title">{blogPost.title}</h1>
+                <div className='date-views-wrapper'>
                 <p className="blog-date">
                     <i className="fa-solid fa-calendar-days"></i>
                     {new Date(blogPost.createdAt).toLocaleDateString('en-US', {
@@ -58,6 +72,11 @@ const Blog = () => {
                         day: 'numeric'
                     })}
                 </p>
+                <p className='blog-views'>
+                    <i className='fa-solid fa-eye'></i>
+                    {blogPost.views + " Views"}
+                </p>
+                </div>
                 <div className="blog-thumbnail">
                     <img src={blogPost.thumbnail} alt={blogPost.title} />
                 </div>
