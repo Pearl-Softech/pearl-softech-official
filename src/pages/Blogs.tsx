@@ -54,14 +54,20 @@ function Blogs() {
           <div key={blog._id} className="blog-card">
             <img src={blog.thumbnail} alt={blog.title} className="blog-thumbnail" />
             <h2 className="blog-card-title">{blog.title}</h2>
-            <p className="blog-date">
-              <i className="fa-solid fa-calendar-days"></i>
-              {new Date(blog.createdAt).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </p>
+            <div className='date-views-wrapper'>
+                <p className="blog-date">
+                    <i className="fa-solid fa-calendar-days"></i>
+                    {new Date(blog.createdAt).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    })}
+                </p>
+                <p className='blog-views'>
+                    <i className='fa-solid fa-eye'></i>
+                    {blog.views + " Views"}
+                </p>
+                </div>
 
             <p className="blog-body">
               {blog.body.length > 150 ? blog.body.substring(0, 150) + '...' : blog.body}
