@@ -32,6 +32,14 @@ function Blogs() {
   return (
     <div className="blogs-container">
       <h1 className="blog-title">OUR BLOGS</h1>
+      {
+        blogs.length !=0?
+        null
+        :
+        <div style={{color: "black", display:'flex', width:"100%", height: "65dvh", justifyContent:'center', alignItems: "center"}}>
+          <h2>LOADING...</h2>
+        </div>
+      }
       <div className="blog-flex-box">
         {blogs.map((blog) => (
           <div key={blog._id} className="blog-card">
