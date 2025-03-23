@@ -13,8 +13,8 @@ const Hero:React.FC = () => {
             Your Trusted Partner for Digital Marketing, Cloud, Software, and Cybersecurity Solutions. Providing innovative solutions to enhance digital presence, optimize operational efficiency.
             </div>
             <div className="buttons">
-                <Link to={""} className="contact">CONTACT US</Link>
-                <Link to={""} className="about">ABOUT US</Link>
+                <Link to={"/contact"} className="contact">CONTACT US</Link>
+                <Link to={"/about"} className="about">ABOUT US</Link>
             </div>
         </div>
         <div className="second-col">
