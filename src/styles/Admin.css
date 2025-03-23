@@ -1,0 +1,16 @@
+.admin-container{
+    padding: 20px;
+    margin-top: 65px;
+    width: 100%;
+    color: black;
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-container i{
+    font-weight: bold;
+    font-size: 18px;
+}

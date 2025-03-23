@@ -6,6 +6,7 @@ function Blogs() {
   const API_KEY = import.meta.env.VITE_API_KEY;
   const SERVER_IP = import.meta.env.VITE_SERVER_IP;
   const [blogs, setBlogs] = useState([]);
+  console.log(`${SERVER_IP}/get-blogs`);
 
   useEffect(() => {
     const fetchBlogs = async () => {

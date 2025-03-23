@@ -11,6 +11,7 @@ import ScrollToTop from './utils/ScrollToTop'
 import Careers from './pages/Careers'
 import Blogs from './pages/Blogs'
 import Blog from './pages/Blog'
+import Admin from './pages/Admin'
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
             <Route path='/careers' element={<Careers />} />
             <Route path='/blogs' element={<Blogs />} />
             <Route path='/blog/:id' element={<Blog />} />
+            <Route path='/admin' element={<Admin />} />
           </Routes>
         </main>
         <Footer />
