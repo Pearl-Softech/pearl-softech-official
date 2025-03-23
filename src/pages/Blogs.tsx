@@ -10,7 +10,7 @@ function Blogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`${SERVER_IP}:8080/get-blogs`, {
+        const response = await fetch(`${SERVER_IP}/get-blogs`, {
           method: 'GET',
           headers: {
             'x-api-key': API_KEY
