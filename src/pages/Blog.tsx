@@ -33,19 +33,20 @@ const Blog = () => {
 
         const incrementViews = async ()=>{
             try{
-                const response = await fetch(`${SERVER_IP}/blog/increment-views/${blogPost._id}`, {
+                const response = await fetch(`${SERVER_IP}/blog/increment-views/${id}`, {
                     method: "PUT",
                     headers: {
                         'x-api-key': API_KEY
                     }
                 });
+                console.log(response)
             }catch(err){
                 console.log(err);
             }
         }
 
-        incrementViews();
         fetchBlogPost();
+        incrementViews();
     }, [id]); // Re-run when the `id` changes
 
     if (loading) {
