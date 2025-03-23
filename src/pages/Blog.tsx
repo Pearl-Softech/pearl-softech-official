@@ -44,6 +44,7 @@ const Blog = () => {
             }
         }
 
+        incrementViews();
         fetchBlogPost();
     }, [id]); // Re-run when the `id` changes
 
