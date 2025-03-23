@@ -15,7 +15,6 @@ function Blogs() {
           headers: {
             'x-api-key': API_KEY,
           },
-          mode: 'no-cors'
         });
         const data = await response.json();
         if (response.ok) {
