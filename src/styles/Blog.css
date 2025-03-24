@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
 }
 
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    color: var(--primary-color);
 }
 
 .blog-container .blog-date{
@@ -43,8 +44,8 @@
     width: 100%;
     height: 500px;
     border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .blog-container main .blog-thumbnail img{
@@ -57,6 +58,7 @@
 .blog-container main .blog-body{
     white-space: pre-wrap;
     font-size: 20px;
+    color: var(--primary-color);
 }
 
 .blog-container .second-row{
@@ -115,19 +117,19 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 3.5px solid rgb(226, 226, 226);
+    box-shadow: 0px 2px 2px var(--primary-color);
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .blog-container .third-row .recent-blogs-wrapper a{
     text-decoration: none !important;
-    color: black !important;
+    color: var(--primary-color) !important;
 }
 .blog-container .third-row .recent-blogs-wrapper .recent-blog:hover{
-    border-color: var(--primary-color);
+    box-shadow: 0px 5px 5px var(--primary-color);
 }
 
 .blog-container .third-row .recent-blogs-wrapper .recent-blog h3{
