@@ -5,6 +5,7 @@
     padding-left: 30px;
     gap: 20px;
     height: 100dvh;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
@@ -87,7 +88,6 @@
     .hero-container{
         flex-direction: column-reverse;
         padding: 20px;
-        margin-top: 50px;
         height: fit-content;
     }
     .hero-container .first-col{

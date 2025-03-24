@@ -1,5 +1,5 @@
 .careers-container{
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .careers-container .first-row{
@@ -54,28 +54,96 @@
 }
 
 .careers-container .second-row{
-    padding: 100px;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
 }
 
 .careers-container .second-row .header{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
-    color: red;
+    color: var(--primary-color);
+    margin-bottom: 30px;
 }
 
 .careers-container .second-row .header i{
     margin-right: 15px;
 }
 
-.careers-container .second-row .para{
-    width: 50%;
-    margin-top: 10px;
-    text-align: center;
+.careers-container .second-row .job-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.careers-container .second-row .job-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.careers-container .second-row .job-list .job-item{
+    width: 650px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.555);
+}
+
+.careers-container .second-row .job-list .job-item:hover{
+    transform: scale(1.009);
+}
+
+.careers-container .second-row .job-list .job-item .info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.careers-container .second-row .job-list .job-item .info .tags p{
+    background-color: white;
+    color: var(--primary-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+.careers-container .second-row .job-list .job-item .info .tags{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.careers-container .second-row .job-list .job-item .info .deadline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.careers-container .second-row .job-list .job-item .info .deadline p{
+    font-weight: bold;
+}
+
+.careers-container .second-row .no-job{
+    font-size: 22px;
+    color: red;
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1100px){
@@ -94,17 +162,15 @@
 }
 
 @media screen and (max-width: 760px){
-    .careers-container{
-        margin-top: 50px;
+    .careers-container .second-row .header{
+        margin-bottom: 15px;
+        font-size: 25px;
+        word-break: break-all;
     }
-    .careers-container .second-row{
+    .careers-container .second-row .job-list{
         padding: 20px;
     }
-    .careers-container .second-row .header{
-        font-size: 18px;
-    }
-    .careers-container .second-row .para{
+    .careers-container .second-row .job-list .job-item{
         width: 100%;
-        font-size: 14px;
     }
 }

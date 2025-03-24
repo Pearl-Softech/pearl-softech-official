@@ -113,7 +113,7 @@ const Blog = () => {
                 <div className="blog-body">{blogPost.body}</div>
             </main>
             <div className="second-row">
-                <div className="left">Share this Blog</div>
+                <div className="left"><i className="fa-solid fa-share-nodes"></i> Share this Blog</div>
                 <div className="right">
                     <a href={"https://www.facebook.com/sharer/sharer.php?u=" + "pearlsoftech.com" + "/blog/" + blogPost._id} target='_blank'><i className='fa-brands fa-facebook'></i></a>
                     <a href={"https://wa.me/?text=" + "pearlsoftech.com" + "/blog/" + blogPost._id} target='_blank'><i className='fa-brands fa-whatsapp'></i></a>
@@ -122,7 +122,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className="third-row">
-                <div className="title">RECENT BLOGS</div>
+                <div className="title"><i className="fa-solid fa-clock-rotata-left"></i> RECENT BLOGS</div>
                 <div className="recent-blogs-wrapper">
                     {recentBlogs.length > 0 ? (
                         recentBlogs.map((blog) => (
@@ -152,7 +152,7 @@ const Blog = () => {
                             </Link>
                         ))
                     ) : (
-                        <p style={{color: "var(--primary-color)"}}>No recent blogs available</p>
+                        <p style={{color: "var(--primary-color)"}}>: No recent blogs available</p>
                     )}
                 </div>
             </div>
