@@ -1,5 +1,5 @@
 .service-container{
-    margin-top: 72.4px;
+    margin-top: 65px;
 }
 
 .service-container .first-row{
@@ -200,6 +200,9 @@
 }
 
 @media screen and (max-width: 760px){
+    .service-container{
+        margin-top: 50px;
+    }
     .service-container .second-row{
         padding: 20px;
     }

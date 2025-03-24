@@ -1,5 +1,5 @@
 .team-container{
-    margin-top: 72.4px;
+    margin-top: 65px;
 }
 
 .team-container .first-row{
@@ -171,6 +171,9 @@
 }
 
 @media screen and (max-width: 760px){
+    .team-container{
+        margin-top: 50px;
+    }
     .team-container .first-row .first-col .header{
         font-size: 25px;
     }

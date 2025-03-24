@@ -1,5 +1,5 @@
 .contact-container {
-    margin-top: 72.4px;
+    margin-top: 65px;
 }
 
 .contact-container .first-row{
@@ -202,6 +202,9 @@
 
 
 @media screen and (max-width: 760px) {
+    .contact-container{
+        margin-top: 50px;
+    }
     .contact-container .second-row {
         flex-direction: column;
         padding: 20px;

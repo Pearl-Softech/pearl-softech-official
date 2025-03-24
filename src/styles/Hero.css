@@ -87,8 +87,7 @@
     .hero-container{
         flex-direction: column-reverse;
         padding: 20px;
-        margin-top: 72.4px;
-        margin-bottom: 50px;
+        margin-top: 50px;
         height: fit-content;
     }
     .hero-container .first-col{

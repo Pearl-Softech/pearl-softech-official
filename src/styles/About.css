@@ -1,5 +1,5 @@
 .about-container{
-    margin-top: 72.4px;
+    margin-top: 65px;
 }
 
 .about-container .first-row{
@@ -295,6 +295,9 @@
 }
 
 @media screen and (max-width: 760px){
+    .about-container{
+        margin-top: 50px;
+    }
     .about-container .first-row{
         padding: 20px;
     }

@@ -1,6 +1,5 @@
 .blog-container{
-    margin-top: 65px;
-    margin-bottom: 40px;
+    margin-top: 80px;
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -13,7 +12,6 @@
 }
 
 .blog-container main{
-    padding-top: 60px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -93,10 +91,14 @@
 
 @media screen and (max-width: 760px){
     .blog-container{
-        margin-top: 0px;
+        margin-top: 50px;
     }
     .blog-container main{
         width: 100% !important;
+    }
+
+    .blog-container main .blog-card-title{
+        font-size: 28px;
     }
 
     .blog-container .second-row{
