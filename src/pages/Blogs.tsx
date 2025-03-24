@@ -37,10 +37,9 @@ function Blogs() {
         blogs.length != 0 ?
           null
           :
-          <div style={{ display: 'flex', width: "100%", height: "70dvh", justifyContent: 'center', alignItems: "center"}}>
-
+          <div style={{ display: 'flex', width: "100%", height: "70dvh", justifyContent: 'center', alignItems: "center" }}>
             <PulseLoader
-            color='#16364a'
+              color='#16364a'
             />
           </div>
       }

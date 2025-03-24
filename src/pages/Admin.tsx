@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Admin.css';
+import { PulseLoader } from 'react-spinners';
 
 const Admin = () => {
   const [dots, setDots] = useState('');
@@ -18,7 +19,9 @@ const Admin = () => {
 
   return (
     <div className="admin-container">
-      <h2>REDIRECTING{dots}</h2>
+      <PulseLoader
+        color='#16364a'
+      />
     </div>
   );
 };
