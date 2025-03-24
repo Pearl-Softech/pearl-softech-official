@@ -58,8 +58,10 @@ const Blog = () => {
                     throw new Error('Failed to fetch recent blogs');
                 }
                 const data = await response.json();
+                // Filter out the current blog post
+                const filteredBlogs = data.blogs.filter(blog => blog._id !== id);
                 // Sort blogs by date and take the latest 5
-                const sortedBlogs = data.blogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                const sortedBlogs = filteredBlogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
                 setRecentBlogs(sortedBlogs.slice(0, 5));
             } catch (error) {
                 setError(error.message);
@@ -124,8 +126,8 @@ const Blog = () => {
                 <div className="recent-blogs-wrapper">
                     {recentBlogs.length > 0 ? (
                         recentBlogs.map((blog) => (
-                            <Link to={"/blog/" + blog._id}>
-                                <div key={blog._id} className="recent-blog">
+                            <Link to={"/blog/" + blog._id} key={blog._id}>
+                                <div className="recent-blog">
                                     <div className='recent-blog-thumbnail'>
                                         <img src={blog.thumbnail} alt="" />
                                     </div>
