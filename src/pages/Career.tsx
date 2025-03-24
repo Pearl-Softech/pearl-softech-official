@@ -108,7 +108,7 @@ const Career = () => {
             </div>
 
             <div className="second-row">
-                <div className="left"><i className="fa-solid fa-share-nodes"></i>Share this Career</div>
+                <div className="left"><i className="fa-solid fa-share-nodes"></i><span>Share this Career</span></div>
                 <div className="right">
                     <a href={`https://www.facebook.com/sharer/sharer.php?u=pearlsoftech.com/career/${career._id}`} target='_blank' rel="noopener noreferrer">
                         <i className='fa-brands fa-facebook'></i>
