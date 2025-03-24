@@ -152,7 +152,7 @@ const Blog = () => {
                             </Link>
                         ))
                     ) : (
-                        <p style={{color: "var(--primary-color)"}}>: No recent blogs available</p>
+                        <p style={{color: "var(--primary-color)"}}>:No recent blogs available</p>
                     )}
                 </div>
             </div>

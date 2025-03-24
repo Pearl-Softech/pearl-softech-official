@@ -66,7 +66,7 @@ const Careers: React.FC = () => {
             </div>
 
             <div className="second-row">
-                <div className="header">AVAILABLE VACANCIES</div>
+                <div className="header"><i className='fa-solid fa-user-plus'></i>AVAILABLE VACANCIES</div>
 
                 {loading ? (
                     <PulseLoader color='var(--primary-color)' />

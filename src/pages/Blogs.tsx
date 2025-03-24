@@ -32,7 +32,7 @@ function Blogs() {
 
   return (
     <div className="blogs-container">
-      <h1 className="blog-title">OUR BLOGS</h1>
+      <h1 className="blog-title"><i className='fa-solid fa-blog'></i>OUR BLOGS</h1>
       {
         blogs.length != 0 ?
           null

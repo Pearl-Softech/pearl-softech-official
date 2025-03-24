@@ -149,7 +149,7 @@ const Career = () => {
                             </Link>
                         ))
                     ) : (
-                        <p style={{ color: "var(--primary-color)" }}>: No recent careers available</p>
+                        <p style={{ color: "var(--primary-color)" }}>:No recent careers available</p>
                     )}
                 </div>
             </div>

@@ -12,6 +12,10 @@
     margin-top: 20px;
 }
 
+.blogs-container .blog-title i{
+    margin-right: 10px;
+}
+
 .blogs-container .blog-flex-box {
     display: flex;
     flex-direction: row;
