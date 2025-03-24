@@ -18,7 +18,7 @@
 .career-container .first-row {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     font-size: 17px;
     padding-left: 50px;
     padding-right: 50px;
@@ -75,6 +75,7 @@
 
 .career-container .first-row .content .right p{
     font-weight: 300;
+    margin-bottom: 5px;
 }
 
 .career-container .first-row .content .right span {
@@ -113,6 +114,13 @@
 
 .career-container .third-row{
     width: 90%;
+}
+
+.career-container .third-row .title{
+    font-size: 22px;
+    font-weight: bolder;
+    color: var(--primary-color);
+    align-self: flex-start;
 }
 
 .career-container .third-row .recent-careers-wrapper{

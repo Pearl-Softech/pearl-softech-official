@@ -75,7 +75,7 @@ const Career = () => {
 
                         <div className="qualification">
                             <div className="title"><i className="fa-solid fa-graduation-cap"></i>Qualifications</div>
-                            <ul>
+                            <ul style={{display:'flex', flexDirection:'column', gap:'5px'}}>
                                 {career.qualification?.map((qualification: string, index: number) => (
                                     <p key={index}><i className="fa-solid fa-circle" style={{fontSize: "8px"}}></i> {qualification}</p>
                                 ))}
@@ -84,7 +84,7 @@ const Career = () => {
 
                         <div className="required-skills">
                             <div className="title"><i className="fa-solid fa-wrench"></i>Required Skills</div>
-                            <ul>
+                            <ul style={{display:'flex', flexDirection:'column', gap:'5px'}}>
                                 {career.requiredSkills?.map((skill: string, index: number) => (
                                     <p key={index}><i className="fa-solid fa-circle" style={{fontSize: "8px"}}></i> {skill}</p>
                                 ))}

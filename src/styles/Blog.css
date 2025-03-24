@@ -1,4 +1,4 @@
-.career-container {
+.blog-container{
     margin-top: 80px;
     background-color: white;
     padding: 20px;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.career-container main {
+.blog-container main{
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -19,22 +19,28 @@
     color: var(--primary-color);
 }
 
-.career-container .career-date,
-.career-container .career-views {
+.blog-container .blog-date{
     color: #4d4d4d;
 }
 
-.career-container .career-date i,
-.career-container .career-views i {
+.blog-container .blog-date i{
     margin-right: 8px;
 }
 
-.career-container .date-views-wrapper {
+.blog-container .blog-views{
+    color: #4d4d4d;
+}
+
+.blog-container .blog-views i{
+    margin-right: 8px;
+}
+
+.blog-container .date-views-wrapper{
     display: flex;
     gap: 20px;
 }
 
-.career-container main .career-thumbnail {
+.blog-container main .blog-thumbnail{
     width: 100%;
     height: 500px;
     border-radius: 8px;
@@ -42,20 +48,20 @@
     margin-bottom: 15px;
 }
 
-.career-container main .career-thumbnail img {
+.blog-container main .blog-thumbnail img{
     height: 100%;
     border-radius: 8px;
     width: 100%;
     object-fit: cover;
 }
 
-.career-container main .career-body {
+.blog-container main .blog-body{
     white-space: pre-wrap;
     font-size: 20px;
     color: var(--primary-color);
 }
 
-.career-container .second-row {
+.blog-container .second-row{
     background-color: var(--primary-color);
     width: 60%;
     display: flex;
@@ -69,113 +75,119 @@
     border-radius: 8px;
 }
 
-.career-container .second-row .left {
+.blog-container .second-row .left{
     font-size: 22px;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.career-container .second-row .right {
+.blog-container .second-row .right{
     display: flex;
     gap: 20px;
 }
 
-.career-container .second-row a {
+.blog-container .second-row a{
     color: white;
     font-size: 25px;
 }
 
-.career-container .third-row {
+.blog-container .third-row{
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.career-container .third-row .title {
+.blog-container .third-row .title{
     font-size: 22px;
     font-weight: bolder;
     color: var(--primary-color);
     align-self: flex-start;
 }
 
-.career-container .third-row .recent-careers-wrapper {
+.blog-container .third-row .recent-blogs-wrapper{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
 }
 
-.career-container .third-row .recent-careers-wrapper .recent-career {
+.blog-container .third-row .recent-blogs-wrapper .recent-blog{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    box-shadow: 0px 2px 2px var(--primary-color);
+    box-shadow: 0px 3px 3px var(--primary-color);
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.career-container .third-row .recent-careers-wrapper a {
+.blog-container .third-row .recent-blogs-wrapper a{
     text-decoration: none !important;
     color: var(--primary-color) !important;
 }
-
-.career-container .third-row .recent-careers-wrapper .recent-career:hover {
+.blog-container .third-row .recent-blogs-wrapper .recent-blog:hover{
     box-shadow: 0px 5px 5px var(--primary-color);
 }
 
-.career-container .third-row .recent-careers-wrapper .recent-career h3 {
+.blog-container .third-row .recent-blogs-wrapper .recent-blog h3{
     max-width: 250px;
     width: auto;
 }
 
-.career-container .third-row .recent-careers-wrapper .recent-career .recent-career-thumbnail {
+.blog-container .third-row .recent-blogs-wrapper .recent-blog .recent-blog-thumbnail{
     height: 100px;
     width: 100px;
     border-radius: 8px;
 }
 
-.career-container .third-row .recent-careers-wrapper .recent-career .recent-career-thumbnail img {
+.blog-container .third-row .recent-blogs-wrapper .recent-blog .recent-blog-thumbnail img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.career-container .second-row i, .career-container .second-row i{
+.blog-container .second-row i, .blog-container .third-row i{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 760px) {
-    .career-container {
+@media screen and (max-width: 760px){
+    .blog-container{
         margin-top: 50px;
     }
-    .career-container main {
+    .blog-container main{
         width: 100% !important;
     }
-    .career-container .second-row {
+
+    .blog-container main .blog-card-title{
+        font-size: 28px;
+    }
+
+    .blog-container .second-row{
         width: 100%;
     }
-    .career-container .second-row .left {
+    .blog-container .second-row .left{
         font-size: 16px;
     }
-    .career-container .second-row .right {
+    .blog-container .second-row .right{
         gap: 12px;
     }
-    .career-container .second-row a {
+    .blog-container .second-row a{
         font-size: 18px;
     }
-    .career-container main .career-thumbnail {
+    .blog-container main .blog-thumbnail{
         height: 200px;
     }
-    .career-container .third-row {
+    .blog-container .third-row{
         width: 100%;
     }
-    .career-container .third-row .recent-career {
+    .blog-container .third-row .recent-blog{
         width: 100%;
         justify-content: flex-start !important;
     }
 }
+
+

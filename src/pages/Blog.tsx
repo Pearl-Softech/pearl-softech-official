@@ -122,7 +122,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className="third-row">
-                <div className="title"><i className="fa-solid fa-clock-rotata-left"></i> RECENT BLOGS</div>
+                <div className="title"><i className="fa-solid fa-clock-rotate-left"></i> RECENT BLOGS</div>
                 <div className="recent-blogs-wrapper">
                     {recentBlogs.length > 0 ? (
                         recentBlogs.map((blog) => (
