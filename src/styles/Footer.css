@@ -1,6 +1,5 @@
 .footer-container{
-    border-top: 0.1px solid rgb(231, 231, 231);
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,12 +17,13 @@
 }
 
 .footer-container .first-col a{
-    color: var(--primary-color);
+    color: white;
     text-decoration: none;
 }
 
 .footer-container .middle{
-    color: var(--primary-color);
+    font-size: 15px;
+    color: rgb(247, 247, 247);
 }
 
 .footer-container .second-col .links{
@@ -33,7 +33,7 @@
 }
 
 .footer-container .second-col .links a{
-    color: var(--primary-color);
+    color: white;
     font-size: 25px;
     text-decoration: none;
 }
@@ -42,7 +42,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 970px){
     .footer-container .first-col .logo{
         font-size: 20px;
     }
