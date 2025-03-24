@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import PulseLoader from "react-spinners/PulseLoader";
 import '../styles/Blog.css';
 
@@ -10,6 +10,7 @@ const Blog = () => {
     const [blogPost, setBlogPost] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [recentBlogs, setRecentBlogs] = useState([]);
 
     useEffect(() => {
         const fetchBlogPost = async () => {
@@ -45,8 +46,29 @@ const Blog = () => {
             }
         }
 
+        const fetchRecentBlogs = async () => {
+            try {
+                const response = await fetch(`${SERVER_IP}/get-blogs`, {
+                    method: "GET",
+                    headers: {
+                        'x-api-key': API_KEY
+                    }
+                });
+                if (!response.ok) {
+                    throw new Error('Failed to fetch recent blogs');
+                }
+                const data = await response.json();
+                // Sort blogs by date and take the latest 5
+                const sortedBlogs = data.blogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                setRecentBlogs(sortedBlogs.slice(0, 5));
+            } catch (error) {
+                setError(error.message);
+            }
+        }
+
         fetchBlogPost();
         incrementViews();
+        fetchRecentBlogs();
     }, [id]);
 
     if (loading) {
@@ -95,6 +117,41 @@ const Blog = () => {
                     <a href={"https://wa.me/?text=" + "pearlsoftech.com" + "/blog/" + blogPost._id} target='_blank'><i className='fa-brands fa-whatsapp'></i></a>
                     <a href={"https://www.linkedin.com/shareArticle?mini=true&url=" + "pearlsoftech.com" + "/blog/" + blogPost._id + "&title=Optional%20Title&summary=Optional%20Summary&source=Optional%20Source"} target='_blank'><i className='fa-brands fa-linkedin'></i></a>
                     <a href={"mailto:?subject=Check%20this%20out&body=Check%20out%20this%20Blog%3A%20" + "pearlsoftech.com" + "/blog/" + blogPost._id} target='_blank'><i className='fa-solid fa-envelope'></i></a>
+                </div>
+            </div>
+            <div className="third-row">
+                <div className="title">RECENT BLOGS</div>
+                <div className="recent-blogs-wrapper">
+                    {recentBlogs.length > 0 ? (
+                        recentBlogs.map((blog) => (
+                            <Link to={"/blog/" + blog._id}>
+                                <div key={blog._id} className="recent-blog">
+                                    <div className='recent-blog-thumbnail'>
+                                        <img src={blog.thumbnail} alt="" />
+                                    </div>
+                                    <div style={{display:'flex', flexDirection:"column", gap: '8px'}}>
+                                        <h3>{blog.title}</h3>
+                                        <div className='date-views-wrapper'>
+                                            <p className="blog-date">
+                                                <i className="fa-solid fa-calendar-days"></i>
+                                                {new Date(blog.createdAt).toLocaleDateString('en-US', {
+                                                    year: 'numeric',
+                                                    month: 'long',
+                                                    day: 'numeric'
+                                                })}
+                                            </p>
+                                            <p className='blog-views'>
+                                                <i className='fa-solid fa-eye'></i>
+                                                {blog.views + " Views"}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))
+                    ) : (
+                        <p style={{color: "var(--primary-color)"}}>No recent blogs available</p>
+                    )}
                 </div>
             </div>
         </div>
