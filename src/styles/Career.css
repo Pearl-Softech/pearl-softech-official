@@ -208,8 +208,8 @@
         width: 100%;
     }
 
-    .career-container .second-row .left {
-        font-size: 16px;
+    .career-container .second-row .left span {
+        display: none;
     }
 
     .career-container .second-row .right {

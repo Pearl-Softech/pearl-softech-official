@@ -169,8 +169,8 @@
     .blog-container .second-row{
         width: 100%;
     }
-    .blog-container .second-row .left{
-        font-size: 16px;
+    .blog-container .second-row .left span{
+        display: none;
     }
     .blog-container .second-row .right{
         gap: 12px;
