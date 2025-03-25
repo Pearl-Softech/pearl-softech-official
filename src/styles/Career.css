@@ -56,6 +56,10 @@
     gap: 15px;
 }
 
+.career-container .first-row .content .left .discription p{
+    white-space: pre-wrap;
+}
+
 .career-container .first-row .content .right {
     width: 30%;
     background-color: var(--primary-color);

@@ -13,6 +13,8 @@ import Blogs from './pages/Blogs'
 import Blog from './pages/Blog'
 import Admin from './pages/Admin'
 import Career from './pages/Career'
+import Testimonials from './pages/Testimonials'
+import Testimonial from './pages/Testimonial'
 
 const App: React.FC = () => {
   return (
@@ -31,6 +33,8 @@ const App: React.FC = () => {
             <Route path='/blog/:id' element={<Blog />} />
             <Route path='/career/:id' element={<Career />} />
             <Route path='/admin' element={<Admin />} />
+            <Route path='/testimonials' element={<Testimonials />} />
+            <Route path='/testimonial/:id' element={<Testimonial />} />
           </Routes>
         </main>
         <Footer />
