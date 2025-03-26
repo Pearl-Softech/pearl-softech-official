@@ -110,7 +110,7 @@ const Blog = () => {
                 <div className="blog-thumbnail">
                     <img src={blogPost.thumbnail} alt={blogPost.title} />
                 </div>
-                <div className="blog-body">{blogPost.body}</div>
+                <div className="blog-body" dangerouslySetInnerHTML={{ __html: blogPost.body }}></div>
             </main>
             <div className="second-row">
                 <div className="left"><i className="fa-solid fa-share-nodes"></i><span>Share this Blog</span></div>
