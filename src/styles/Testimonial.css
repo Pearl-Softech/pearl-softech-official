@@ -1,5 +1,6 @@
 .testimonial-container {
     margin-top: 80px;
+    margin-bottom: 40px;
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -140,6 +141,9 @@
 }
 
 @media screen and (max-width: 770px) {
+    .testimonial-container{
+        margin-bottom: 20px;
+    }
     .testimonial-container .first-row{
         padding: 0px;
     }

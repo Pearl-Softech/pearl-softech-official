@@ -127,32 +127,32 @@ const Blog = () => {
                     {recentBlogs.length > 0 ? (
                         recentBlogs.map((blog) => (
                             <Link to={"/blog/" + blog._id} key={blog._id}>
-                                <div className="recent-blog">
-                                    <div className='recent-blog-thumbnail'>
-                                        <img src={blog.thumbnail} alt="" />
-                                    </div>
-                                    <div style={{display:'flex', flexDirection:"column", gap: '8px'}}>
-                                        <h3>{blog.title}</h3>
-                                        <div className='date-views-wrapper'>
-                                            <p className="blog-date">
-                                                <i className="fa-solid fa-calendar-days"></i>
-                                                {new Date(blog.createdAt).toLocaleDateString('en-US', {
-                                                    year: 'numeric',
-                                                    month: 'long',
-                                                    day: 'numeric'
-                                                })}
-                                            </p>
-                                            <p className='blog-views'>
-                                                <i className='fa-solid fa-eye'></i>
-                                                {blog.views + " Views"}
-                                            </p>
-                                        </div>
+
+                                <div className='recent-blog-thumbnail'>
+                                    <img src={blog.thumbnail} alt="" />
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: "column", gap: '8px' }}>
+                                    <h3>{blog.title}</h3>
+                                    <div className='date-views-wrapper'>
+                                        <p className="blog-date">
+                                            <i className="fa-solid fa-calendar-days"></i>
+                                            {new Date(blog.createdAt).toLocaleDateString('en-US', {
+                                                year: 'numeric',
+                                                month: 'long',
+                                                day: 'numeric'
+                                            })}
+                                        </p>
+                                        <p className='blog-views'>
+                                            <i className='fa-solid fa-eye'></i>
+                                            {blog.views + " Views"}
+                                        </p>
                                     </div>
                                 </div>
+
                             </Link>
                         ))
                     ) : (
-                        <p style={{color: "var(--primary-color)"}}>:No recent blogs available</p>
+                        <p style={{ color: "var(--primary-color)" }}>:No recent blogs available</p>
                     )}
                 </div>
             </div>

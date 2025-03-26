@@ -1,5 +1,6 @@
 .blog-container{
     margin-top: 80px;
+    margin-bottom: 40px;
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -113,7 +114,13 @@
 }
 
 .blog-container .third-row .recent-blogs-wrapper .recent-blog{
+}
+
+.blog-container .third-row .recent-blogs-wrapper  a{
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
     display: flex;
+    flex-direction: row !important;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -123,30 +130,23 @@
     padding: 12px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    height: 160px;
-    width: 400px;
 }
-
-.blog-container .third-row .recent-blogs-wrapper a{
-    text-decoration: none !important;
-    color: var(--primary-color) !important;
-}
-.blog-container .third-row .recent-blogs-wrapper .recent-blog:hover{
+.blog-container .third-row .recent-blogs-wrapper  a:hover{
     box-shadow: 0px 5px 5px black;
 }
 
-.blog-container .third-row .recent-blogs-wrapper .recent-blog h3{
+.blog-container .third-row .recent-blogs-wrapper h3{
     max-width: 250px;
     width: auto;
 }
 
-.blog-container .third-row .recent-blogs-wrapper .recent-blog .recent-blog-thumbnail{
+.blog-container .third-row .recent-blogs-wrapper .recent-blog-thumbnail{
     height: 100px;
     width: 100px;
     border-radius: 8px;
 }
 
-.blog-container .third-row .recent-blogs-wrapper .recent-blog .recent-blog-thumbnail img{
+.blog-container .third-row .recent-blogs-wrapper .recent-blog-thumbnail img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -160,6 +160,7 @@
 @media screen and (max-width: 760px){
     .blog-container{
         margin-top: 50px;
+        margin-bottom: 20px;
     }
     .blog-container main{
         width: 100% !important;
@@ -187,13 +188,11 @@
     .blog-container .third-row{
         width: 100%;
     }
-    .blog-container .third-row .recent-blog{
-        width: 100%;
-        justify-content: flex-start !important;
-    }
-    .blog-container .third-row .recent-blogs-wrapper .recent-blog{
+    
+    .blog-container .third-row .recent-blogs-wrapper a{
         height: auto;
         width: 100%;
+        justify-content: flex-start;
     }
 }
 

@@ -1,5 +1,6 @@
 .career-container {
     margin-top: 80px;
+    margin-bottom: 25px;
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -130,8 +131,9 @@
 .career-container .third-row .recent-careers-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 15px;
+    margin-top: 8px;
 }
 
 .career-container .third-row .recent-careers-wrapper .job-item{
@@ -159,6 +161,7 @@
 
 .career-container .third-row .recent-careers-wrapper .job-item .info{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
     font-size: 15px;
@@ -205,6 +208,9 @@
 
 
 @media screen and (max-width: 760px) {
+    .career-container{
+        margin-bottom: 20px;
+    }
     .career-container .first-row .top{
         font-size: 25px;
     }
@@ -238,5 +244,8 @@
     .career-container .third-row .recent-career {
         width: 100%;
         justify-content: flex-start !important;
+    }
+    .career-container .third-row .recent-careers-wrapper a .job-item{
+        width: 100%;
     }
 }

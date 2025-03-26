@@ -234,7 +234,7 @@
     width: 100%;
 }
 
-.testimonials-container form input::placeholder, .testimonial-container form textarea::placeholder{
+.testimonials-container form input::placeholder, .testimonials-container form textarea::placeholder{
     font-size: 15px;
 }
 
