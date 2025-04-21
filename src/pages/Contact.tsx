@@ -38,6 +38,7 @@ const Contact: React.FC = () => {
                         <a href="https://www.facebook.com/people/Pearl-Softech/61569672626784/"><i className='fa-brands fa-facebook'></i></a>
                         <a href="https://www.linkedin.com/company/pearl-softech/"><i className='fa-brands fa-linkedin'></i></a>
                         <a href="https://www.instagram.com/pearl_softech/"><i className='fa-brands fa-instagram'></i></a>
+                        <a href="https://www.tiktok.com/@pearl_softech3"><i className='fa-brands fa-tiktok'></i></a>
                     </div>
                 </div>
                 <div className="second-col">
