@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
       </div>
       <div className="second-col">
         <div className="links">
-          <a href=""><i className='fa-brands fa-facebook'></i></a>
-          <a href=""><i className='fa-brands fa-linkedin'></i></a>
-          <a href=""><i className='fa-brands fa-instagram'></i></a>
+          <a href="https://www.facebook.com/people/Pearl-Softech/61569672626784/"><i className='fa-brands fa-facebook'></i></a>
+          <a href="https://www.linkedin.com/company/pearl-softech/"><i className='fa-brands fa-linkedin'></i></a>
+          <a href="https://www.instagram.com/pearl_softech/"><i className='fa-brands fa-instagram'></i></a>
         </div>
       </div>
     </div>
