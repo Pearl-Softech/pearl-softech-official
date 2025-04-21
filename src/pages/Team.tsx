@@ -5,11 +5,11 @@ import TeamInner from '../assets/team-inner.jpg'
 
 import memberPhoto1 from "../assets/images/member/1.jpg";
 import memberPhoto2 from "../assets/images/member/2.jpg";
-import memberPhoto3 from "../assets/images/member/3.jpg";
-import memberPhoto4 from "../assets/images/member/4.jpg";
-import memberPhoto5 from "../assets/images/member/5.jpg";
-import memberPhoto6 from "../assets/images/member/6.jpg";
-import memberPhoto7 from '../assets/images/member/7.jpg';
+import memberPhoto3 from "../assets/images/member/3.png";
+import memberPhoto4 from "../assets/images/member/4.png";
+import memberPhoto5 from "../assets/images/member/5.png";
+import memberPhoto6 from "../assets/images/member/6.png";
+import memberPhoto7 from '../assets/images/member/7.png';
 import { Link } from 'react-router-dom';
 
 const teamMembers = [
