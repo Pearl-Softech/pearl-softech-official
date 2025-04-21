@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const teamMembers = [
     {
         name: "Tilak Raj Bhandari",
-        position: "Advisor",
+        position: "Chief Advisor",
         image: memberPhoto1,
         socials: {
             facebook: "https://www.facebook.com/tilakraj.bhandari.5",
@@ -35,7 +35,7 @@ const teamMembers = [
         }
     },
     {
-        name: "Yubraj Basyal",
+        name: "Mahendra Oli",
         position: "Chief Digital Officer",
         image: memberPhoto3,
         socials: {
@@ -46,8 +46,19 @@ const teamMembers = [
         }
     },
     {
+        name: "Yubraj Basyal",
+        position: "Chief Marketing Officer",
+        image: memberPhoto3,
+        socials: {
+            facebook: "",
+            linkedin: "",
+            twitter: "#",
+            github: "#",
+        }
+    },
+    {
         name: "Nirajan Basnet",
-        position: "Director of Engineering",
+        position: "Project Manager",
         image: memberPhoto4,
         socials: {
             facebook: "https://www.facebook.com/profile.php?id=61563473620678",
@@ -58,7 +69,7 @@ const teamMembers = [
     },
     {
         name: "Rajan Naeupane",
-        position: "Chief Innovation Officer",
+        position: "Manager",
         image: memberPhoto5,
         socials: {
             facebook: "https://www.facebook.com/profile.php?id=61553572617056",
