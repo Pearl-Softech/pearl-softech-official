@@ -9,6 +9,7 @@ import memberPhoto3 from "../assets/images/member/3.jpg";
 import memberPhoto4 from "../assets/images/member/4.jpg";
 import memberPhoto5 from "../assets/images/member/5.jpg";
 import memberPhoto6 from "../assets/images/member/6.jpg";
+import memberPhoto7 from '../assets/images/member/7.jpg';
 import { Link } from 'react-router-dom';
 
 const teamMembers = [
@@ -48,7 +49,7 @@ const teamMembers = [
     {
         name: "Yubraj Basyal",
         position: "Chief Marketing Officer",
-        image: memberPhoto3,
+        image: memberPhoto4,
         socials: {
             facebook: "",
             linkedin: "",
@@ -59,7 +60,7 @@ const teamMembers = [
     {
         name: "Nirajan Basnet",
         position: "Project Manager",
-        image: memberPhoto4,
+        image: memberPhoto5,
         socials: {
             facebook: "https://www.facebook.com/profile.php?id=61563473620678",
             linkedin: "https://www.linkedin.com/in/nirajan-basnet-b3526b321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -70,7 +71,7 @@ const teamMembers = [
     {
         name: "Rajan Naeupane",
         position: "Manager",
-        image: memberPhoto5,
+        image: memberPhoto6,
         socials: {
             facebook: "https://www.facebook.com/profile.php?id=61553572617056",
             linkedin: "https://www.linkedin.com/in/rajan-neupane-598191312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -81,7 +82,7 @@ const teamMembers = [
     {
         name: "Rajesh Thapa",
         position: "Lead Developer",
-        image: memberPhoto6,
+        image: memberPhoto7,
         socials: {
             facebook: "#",
             linkedin: "https://www.linkedin.com/in/devrajeshthapa",
