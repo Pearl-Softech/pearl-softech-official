@@ -40,8 +40,8 @@ const teamMembers = [
         position: "Chief Digital Officer",
         image: memberPhoto3,
         socials: {
-            facebook: "",
-            linkedin: "",
+            facebook: "https://www.facebook.com/mahendra.oli.167",
+            linkedin: "#",
             twitter: "#",
             github: "#",
         }
