@@ -18,6 +18,7 @@
 
 .blogs-container .blog-flex-box {
     margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
